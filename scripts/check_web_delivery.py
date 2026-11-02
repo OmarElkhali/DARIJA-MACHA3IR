@@ -1,12 +1,13 @@
 """Vérification HTTP et navigateur headless : aucun contrôle de l’ordinateur ni notebook exécuté."""
 from pathlib import Path
 import json
+import os
 import urllib.request
 import urllib.error
 from playwright.sync_api import sync_playwright
 
 PROJECT=Path(__file__).resolve().parents[1]
-URL='http://127.0.0.1:8765'
+URL=os.environ.get('DARIJA_TEST_URL','http://127.0.0.1:8765')
 report={}
 with urllib.request.urlopen(URL+'/api/status') as response:
     report['engine']=json.load(response)

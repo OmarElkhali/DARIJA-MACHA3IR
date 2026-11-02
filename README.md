@@ -42,10 +42,11 @@ GitHub Pages héberge la présentation et les résultats. **Les prédictions né
 
 ```powershell
 python -m pip install -r requirements-notebook.txt
+python scripts/cache_pretrained.py
 python site/server.py
 ```
 
-Ouvrir **http://127.0.0.1:8765**, puis écrire une phrase. Les poids sélectionnés de A/C/D/P et le marqueur préentraîné de B sont fournis ; B et D téléchargent leurs encodeurs publics lors du premier appel si nécessaire. Le serveur vérifie les empreintes SHA-256 des artefacts locaux. Les phrases ne sont pas enregistrées. Utiliser seulement des checkpoints de confiance.
+Ouvrir **http://127.0.0.1:8765**, puis écrire une phrase. Les poids sélectionnés de A/C/D/P et le marqueur préentraîné de B sont fournis. La commande `cache_pretrained.py` prépare les encodeurs publics B/D dans le cache Hugging Face ; le serveur les charge ensuite hors ligne. Ce téléchargement peut être volumineux. Le serveur vérifie les empreintes SHA-256 des artefacts locaux. Les phrases ne sont pas enregistrées. Utiliser seulement des checkpoints de confiance.
 
 **Cinq méthodes ont été testées avec de véritables prédictions. Le checkpoint ajusté E `E_arabizi_s42/weights.pt` manque dans les fichiers locaux** : son résultat scientifique existe dans les sorties enregistrées, mais le laboratoire affiche son indisponibilité. Aucun score de phrase n’est simulé. Pour réactiver E, restaurer le fichier original correspondant au manifeste dans `experiments/campaign_v4/models/E_arabizi_s42/weights.pt`, puis redémarrer le serveur. Le checkpoint P DarijaBERT exclu reste hors F/G.
 
