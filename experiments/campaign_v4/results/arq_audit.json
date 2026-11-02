@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/afrisenti-semeval/afrisent-semeval-2023/5aec3cfcf87b59f885e98641f72e52182776429d/data/arq/train.tsv",
+  "commit": "5aec3cfcf87b59f885e98641f72e52182776429d",
+  "sha256": "edeaea0e5e57564428b1b4a17a4429381b3f2fa933000d2a6dddf83573e57745",
+  "n_original": 1651,
+  "n_used": 1641,
+  "removed_collisions_duplicates_or_conflicts": 10,
+  "conflicting_texts_removed": 0,
+  "test_arq_used": false
+}

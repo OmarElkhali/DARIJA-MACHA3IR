@@ -1,0 +1,34 @@
+{
+  "run_id": "A_union_train_arabic_s44",
+  "family": "A",
+  "variant": "union_train_arabic",
+  "seed": 44,
+  "kind": "classical",
+  "purpose": "cross_script",
+  "config": {
+    "kind": "union",
+    "train_script": "arabic",
+    "n_train": 3265,
+    "class_weight": "balanced",
+    "C": 1.0
+  },
+  "offsets": [
+    0.0,
+    0.6,
+    -0.6
+  ],
+  "train_seconds": 2.968210499999259,
+  "trainable_parameters": 225975,
+  "checkpoint": "models\\A_union_train_arabic_s44",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "data_sha256": {
+    "train": "9cf4e642bd8425e506192c161e22498e4867c7cc9814ea5bae7e2182b87c9c2b",
+    "dev": "03c4b5612080aeb7011b2d893504ccd6cd0d0aca329dd3ba34ba7defc170cd60"
+  },
+  "created_utc": "2026-10-29T15:45:47.372211+00:00",
+  "device": "cpu"
+}

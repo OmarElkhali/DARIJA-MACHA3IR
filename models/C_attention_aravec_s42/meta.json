@@ -1,0 +1,43 @@
+{
+  "run_id": "C_attention_aravec_s42",
+  "family": "C",
+  "variant": "attention_aravec",
+  "seed": 42,
+  "kind": "neural",
+  "purpose": "benchmark",
+  "config": {
+    "kind": "attention",
+    "embedding": "aravec",
+    "positional": true,
+    "weighted_loss": false,
+    "oversampling": false,
+    "max_length": 64,
+    "min_freq": 2,
+    "lr": 0.001,
+    "epochs": 3,
+    "micro_batch": 32,
+    "effective_batch": 32,
+    "patience": 2,
+    "device": "cpu",
+    "n_train": 5583
+  },
+  "offsets": [
+    0.0,
+    0.3,
+    0.3
+  ],
+  "train_seconds": 50.13503320000018,
+  "trainable_parameters": 1093251,
+  "checkpoint": "models\\C_attention_aravec_s42",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "data_sha256": {
+    "train": "9cf4e642bd8425e506192c161e22498e4867c7cc9814ea5bae7e2182b87c9c2b",
+    "dev": "03c4b5612080aeb7011b2d893504ccd6cd0d0aca329dd3ba34ba7defc170cd60"
+  },
+  "created_utc": "2026-10-29T15:28:45.934612+00:00",
+  "device": "cpu"
+}

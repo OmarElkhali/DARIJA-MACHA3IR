@@ -1,0 +1,691 @@
+{
+  "deck_name": "Darija_Sentiment_Soutenance",
+  "language": "French",
+  "goal": "Présenter clairement le projet universitaire Darija-Sentiment et répondre aux12questions officielles pendant le récit, avec des mesures authentiques et leurs limites.",
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 3,
+  "style": {
+    "name": "Éditorial classique ivoire et forêt",
+    "visual_direction": "French academic defense, warm classic editorial layout, one composition per slide, generous whitespace, coherent and varied evidence/architecture pages",
+    "color_palette": "ivory #F6F3EC, forest #173D36, sage #91A58C, muted terracotta #B66D60, fine warm-grey rules",
+    "typography": "large Georgia-like serif titles and clean Segoe-like humanist sans labels; French accents correct, Arabic right-to-left correctly shaped; body at least ~26px in a1920x1080 canvas",
+    "texture_and_finish": "flat refined paper, no gradients, no shadows, no fake UI panels",
+    "deck_consistency": "Match approved sample palette, typography mood, restraint and density. Vary composition by role. Do not copy sample chart into other slides."
+  },
+  "deck_context": {
+    "source_summary": "Moroccan ary sentiment classification, three classes negative/neutral/positive. Official train5583, val494, test2961. A classicalTFIDF, BexternalNLI/CAMeL, Cneural, DfrozenDarijaBERT, Efullfine-tuningunexecuted. 76recordedruns, noarq. Selection locked ondev. User authorizes allremaining generation without further confirmations.",
+    "core_claim": "TF-IDF characters is the candidate selected ondev; representative test F1.5365. Generalization to Latin isweak. Complexity doesnot guarantee better quality. NoEorMTLresults invented.",
+    "canonical_terms": [
+      "Val = dev",
+      "Weighted-F1 ≠ accuracy",
+      "ary uniquement",
+      "E : campagne complète non exécutée",
+      "Q9 : théorie, arq exclu",
+      "Test oracle : diagnostic a posteriori, jamais déployé"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Analyse de sentiment en darija marocaine",
+      "role": "cover",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Trois sentiments. Plusieurs écritures.",
+        "Une comparaison expérimentale sur AfriSenti ary",
+        "Groupe 12 · Master Big Data"
+      ],
+      "local_context": "No model result on this cover. Illustrative language fragments are not data. The project is Moroccan ary only.",
+      "layout": {
+        "composition": "A strong classic editorial cover: huge serif title at left, generous negative space, one exquisite conceptual ink illustration at right weaving Arabic lettering with Latin text fragments into three understated expressive abstract forms. Use actual decorative Arabic word مشاعر, correctly typeset. Avoid faces with exaggerated emotions and avoid UI cards. Footer Groupe 12 and Master Big Data.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "A strong classic editorial cover: huge serif title at left, generous negative space, one exquisite conceptual ink illustration at right weaving Arabic lettering with Latin text fragments into three understated expressive abstract forms. Use actual decorative Arabic word مشاعر, correctly typeset. Avoid faces with exaggerated emotions and avoid UI cards. Footer Groupe 12 and Master Big Data."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Une langue, plusieurs graphies",
+      "role": "concept",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Arabe : هاد الخدمة زوينة بزاف",
+        "Arabizi : hadchi zwin bzaf",
+        "Mixte : هاد الفيلم زوين mais la fin ma3jbatnich"
+      ],
+      "local_context": "These three phrases illustrate scripts. Do not invent model scores. Latin is not automatically Arabizi; mixed is not a validated annotation of French.",
+      "layout": {
+        "composition": "Wide linguistic composition: large three language lines at left, right small ink drawing of connected speech streams, not separate cards.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Editorial linguistic illustration, three elegantly typeset lines at different script scales, small annotations identifying Arabizi digits, a negation and a French fragment. Add exact small caption « Exemples illustratifs, sans prédiction mesurée ». Main idea: spellings vary and context changes polarity. Use exact subtitle « Exemples illustratifs des écritures ». These phrases differ in content; never claim same content or direct translations."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities.",
+        "Do not use the subtitle Même contenu or claim these different phrases are translations. Use exact subtitle Exemples illustratifs des écritures. No extra explanatory text beyond job specification."
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Le protocole expérimental",
+      "role": "process",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Train : 5 583 tweets pour apprendre",
+        "Val : 494 tweets pour choisir",
+        "Test : 2 961 tweets après verrouillage"
+      ],
+      "local_context": "Val means dev. No train/test mixing, no tuning using test. Later test oracles are clearly retrospective diagnostics, never production rules. Do not depict test feeding training.",
+      "layout": {
+        "composition": "One large three-stage scientific process with a forest line, three spatially distinct stages, training parameters in train, selection in val and a lock before test. Small exact label « Q1 · Q2 · Q10 ». Bottom statement « Vocabulaire et transformations apprises sur train uniquement ».",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "One large three-stage scientific process with a forest line, three spatially distinct stages, training parameters in train, selection in val and a lock before test. Small exact label « Q1 · Q2 · Q10 ». Bottom statement « Vocabulaire et transformations apprises sur train uniquement »."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Distribution des labels et référence majoritaire",
+      "role": "data evidence",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Neutre : classe majoritaire apprise sur train",
+        "Weighted-F1 : train 0,2160 · val 0,2117 · test 0,1608",
+        "Critère principal : Weighted-F1 ; complément : Macro-F1"
+      ],
+      "local_context": "Global includes mixed and other scripts. Always-neutral baseline learned from train stays neutral for val/test. F1 is not accuracy. All test distributions are retrospective.",
+      "layout": {
+        "composition": "Embed Image 2, the strict supplied train/dev chart, at left occupying 58% width, unchanged and with readable axes. On right use exact compact table titled « Distribution globale (%) » rows Train / Val / Test and columns Négatif / Neutre / Positif, values 29,80 / 38,71 / 31,49 ; 27,94 / 38,26 / 33,81 ; 28,71 / 32,66 / 38,64. Under table exact one line « Test analysé après verrouillage ». Bottom the majority F1 and metric choice. Small Q1 label. Do not overwrite original chart.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Embed Image 2, the strict supplied train/dev chart, at left occupying 58% width, unchanged and with readable axes. On right use exact compact table titled « Distribution globale (%) » rows Train / Val / Test and columns Négatif / Neutre / Positif, values 29,80 / 38,71 / 31,49 ; 27,94 / 38,26 / 33,81 ; 28,71 / 32,66 / 38,64. Under table exact one line « Test analysé après verrouillage ». Bottom the majority F1 and metric choice. Small Q1 label. Do not overwrite original chart."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ],
+      "required_images": [
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\results\\figures\\labels_train_dev.png",
+          "role": "strict input asset, scientific evidence figure",
+          "fidelity": "Preserve original data, axes, labels, legends, colors and values. Embed visibly, never redraw or replace with similar chart."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Le raccourci d’écriture",
+      "role": "data evidence",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Le neutre latin passe de 52,6 % sur val à 29,9 % sur test",
+        "Règle écriture seule : F1 val 0,3656 ; test 0,2945",
+        "Une corrélation de corpus peut masquer une faiblesse linguistique"
+      ],
+      "local_context": "Rule uses majority label per script in train, not test. Arabic train neutral29.2%, Latin52.3%; val Arabic27.1%, Latin52.6%; test Arabic36.1%, Latin29.9%. These full per-label distributions are in notes. Scripts are alphabet heuristics, not language labels.",
+      "layout": {
+        "composition": "Embed Image 2 strict supplied script-count figure unchanged on left. On right two large sober numbers 0,3656 and 0,2945 with Val and Test. Small concise rule « Arabe : positif · Latin : neutre » and « Règle apprise sur train ». Small Q1 · Q2. Original chart is counts, right text is proportion/F1: keep units clearly separated.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Embed Image 2 strict supplied script-count figure unchanged on left. On right two large sober numbers 0,3656 and 0,2945 with Val and Test. Small concise rule « Arabe : positif · Latin : neutre » and « Règle apprise sur train ». Small Q1 · Q2. Original chart is counts, right text is proportion/F1: keep units clearly separated."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ],
+      "required_images": [
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\results\\figures\\scripts.png",
+          "role": "strict input asset, scientific evidence figure",
+          "fidelity": "Preserve original data, axes, labels, legends, colors and values. Embed visibly, never redraw or replace with similar chart."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Prétraitement : conserver les indices utiles",
+      "role": "comparison",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "URLs et mentions remplacées ; négations, chiffres et emojis conservés",
+        "Ablation mesurée : emojis et ponctuation répétée retirés ensemble",
+        "Français, chiffres Arabizi et répétitions : effets individuels non mesurés"
+      ],
+      "local_context": "A-word TF-IDF tokenizer excludes standalone emoji/punctuation; A-char can use them. C regex words lowercased, max64; C-character max256. B tokenizer max128; D/E max64. Do not claim a retraining ablation, isolated emoji effect or causal ranking. Sources F4 and preprocessing code.",
+      "layout": {
+        "composition": "Open editorial before/after example « ma3jbnich 😡!!! @ami » becomes « ma3jbnich 😡!!! USER ». Below a clear table with heading « F4 : bascules parmi les cas modifiés » columns A / B / C / D and rows « Cas » 102 / 89 / 107 / 134 and « Bascules » 8,8 % / 12,4 % / 22,4 % / 29,1 %. Large visible caveat « Sous-ensembles différents entre modèles ». Small Q3. Keep table very readable; no decorative cards.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Open editorial before/after example « ma3jbnich 😡!!! @ami » becomes « ma3jbnich 😡!!! USER ». Below a clear table with heading « F4 : bascules parmi les cas modifiés » columns A / B / C / D and rows « Cas » 102 / 89 / 107 / 134 and « Bascules » 8,8 % / 12,4 % / 22,4 % / 29,1 %. Large visible caveat « Sous-ensembles différents entre modèles ». Small Q3. Keep table very readable; no decorative cards."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 7,
+      "title": "A — TF-IDF et régression logistique",
+      "role": "method evidence",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Mots 1–2, caractères 2–5, ou combinaison",
+        "Le vocabulaire TF-IDF apprend uniquement sur train",
+        "Sur val : mots 0,7189 ; caractères 0,7683"
+      ],
+      "local_context": "Scores are mean dev weighted F1 across three seeds, adjusted decision. Comparison includes majority and union. Actual source chart labels char/majority/union/word unchanged.",
+      "layout": {
+        "composition": "Use Image 2 original A dev chart as the dominant wide scientific figure, preserve its axes/data/colors/legend exactly. Above it one small conceptual example of character fragments shared across spelling variants. Below one takeaway, large and concise: « Les caractères offrent une référence solide ». Do not add a claim of universal superiority.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Use Image 2 original A dev chart as the dominant wide scientific figure, preserve its axes/data/colors/legend exactly. Above it one small conceptual example of character fragments shared across spelling variants. Below one takeaway, large and concise: « Les caractères offrent une référence solide ». Do not add a claim of universal superiority."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ],
+      "required_images": [
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\results\\figures\\A_dev.png",
+          "role": "strict input asset, scientific evidence figure",
+          "fidelity": "Preserve original data, axes, labels, legends, colors and values. Embed visibly, never redraw or replace with similar chart."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "B1 — Classer par inférence textuelle",
+      "role": "concept and data",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Prémisse : le tweet ; hypothèse : un sentiment",
+        "L’encodeur confronte les tokens des deux textes",
+        "Trois formulations linguistiques, sans apprentissage local des poids"
+      ],
+      "local_context": "NLI model is mDeBERTa pre-trained and NLI supervised externally. Joint self-attention supports interactions between premise/hypothesis tokens; no causal interpretation. Adjusted column includes offsets fitted on val, not pure zero-shot decision. Sources model card and Yin2019.",
+      "layout": {
+        "composition": "Upper half: concise conceptual joint encoder diagram premise/hypothesis flowing into entailment scores, elegant forest ink, not fake attention heatmap. Lower half: very legible table « Weighted-F1 sur val » rows Arabe / Français / Anglais, columns « Brut » / « Réglé sur val » with values 0,3980 / 0,5010 ; 0,3980 / 0,4972 ; 0,3860 / 0,4634. Small Q4. Caption « Une formulation par langue ; aucun score test NLI principal ».",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Upper half: concise conceptual joint encoder diagram premise/hypothesis flowing into entailment scores, elegant forest ink, not fake attention heatmap. Lower half: very legible table « Weighted-F1 sur val » rows Arabe / Français / Anglais, columns « Brut » / « Réglé sur val » with values 0,3980 / 0,5010 ; 0,3980 / 0,4972 ; 0,3860 / 0,4634. Small Q4. Caption « Une formulation par langue ; aucun score test NLI principal »."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 9,
+      "title": "B2 — CAMeLBERT face aux deux écritures",
+      "role": "data comparison",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Arabe : Weighted-F1 test 0,5581",
+        "Latin : Weighted-F1 test 0,1442",
+        "Supervision externe : absence de contamination non certifiée"
+      ],
+      "local_context": "The 41.39-point difference is observed, not a causal proof that tokenizer alone causes it. Model trained on dialectal Arabic; Latin/Arabizi coverage plausibly weaker. Do not claim no leakage. Mixed n75 score0.4923 can stay in notes only.",
+      "layout": {
+        "composition": "A large two-bar horizontal comparison axis0to1, Arabic0.5581 forest and Latin0.1442 terracotta, exact value labels0,5581 and0,1442. Counts n=1 367 and n=1 519 directly near labels. Above small Q5, below footer « Règle fixée sur val · Test officiel ». Right short source note « Fine-tuning externe : ASTD, ArSAS, SemEval ». No decorative photos.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "A large two-bar horizontal comparison axis0to1, Arabic0.5581 forest and Latin0.1442 terracotta, exact value labels0,5581 and0,1442. Counts n=1 367 and n=1 519 directly near labels. Above small Q5, below footer « Règle fixée sur val · Test officiel ». Right short source note « Fine-tuning externe : ASTD, ArSAS, SemEval ». No decorative photos."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Déséquilibre et règle de décision",
+      "role": "table evidence",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Pondération et suréchantillonnage : gains non uniformes",
+        "Le suréchantillonnage s’applique après la séparation train / val",
+        "Décision multiclasse : argmax [log(p) + décalage]"
+      ],
+      "local_context": "Controlled comparison uses C attention_random, same architecture and embedding. The adjusted score is on the data used to tune offsets, not independent gain validation. No oversampling validation/test. Threshold is relative class offsets, first0.",
+      "layout": {
+        "composition": "One prominent six-cell numeric table plus labels. Header « Weighted-F1 moyen sur val · 3 graines » ; columns « Entraînement », « Argmax », « Décalages val ». Rows « Référence » 0,7223 0,7370 ; « Perte pondérée » 0,7273 0,7356 ; « Suréchantillonnage » 0,7241 0,7294. Highlight reference adjusted0.7370 subtly, not each number. Bottom a simple split-first-then-resample training-only sequence and Q6.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "One prominent six-cell numeric table plus labels. Header « Weighted-F1 moyen sur val · 3 graines » ; columns « Entraînement », « Argmax », « Décalages val ». Rows « Référence » 0,7223 0,7370 ; « Perte pondérée » 0,7273 0,7356 ; « Suréchantillonnage » 0,7241 0,7294. Highlight reference adjusted0.7370 subtly, not each number. Bottom a simple split-first-then-resample training-only sequence and Q6."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 11,
+      "title": "C — Embeddings, BiLSTM et attention",
+      "role": "architecture",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Hasard, AraVec ou fastText appris sur train",
+        "BiLSTM : lecture dans les deux directions",
+        "Attention : pondération descriptive, sans preuve causale"
+      ],
+      "local_context": "Actual token weights rounded from saved CSV. Name/proper noun and punctuation can dominate other examples. No general claim attention favors emoji or French. Closed vocabulary min_freq2 keeps UNK, including fastText initialized model. This diagram does not claim a Transformer in C2.",
+      "layout": {
+        "composition": "One open architecture left-to-right: tokens, embedding vectors, bidirectional paths, weighted aggregation, 3 sentiments. At bottom right exact real mini bar example « ary:dev:3 » tokens tala3 0,451 ; niveau 0,181 ; espania 0,127 ; series 0,083 ; w 0,080. Label « Quelques poids d’un exemple réel ». Tiny Q7. Avoid simulated attention matrices.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "One clear simplified architecture with five stages: Tokens / Embeddings / BiLSTM / Attention / Trois scores. In the BiLSTM stage show exactly two horizontal recurrent paths: one left-to-right and one right-to-left across the same sequence positions. In the attention stage show weighted pooling, no invented numerical matrix. Bottom-right a ruled NUMERIC TABLE, not bars: heading « Quelques poids : ary:dev:3 », rows tala3 0,451 ; niveau 0,181 ; espania 0,127 ; series 0,083 ; w 0,080. Exact values and labels; no chart lengths to approximate. Small Q7. Bottom statement « Attention descriptive, sans preuve causale · OOV : UNK conservé ». Avoid repeated/duplicated recurrent rows."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities.",
+        "Attention evidence must be a plain numeric table, not a proportional bar chart.",
+        "Show only two recurrent directional paths, not four duplicated paths."
+      ]
+    },
+    {
+      "number": 12,
+      "title": "C1 à C4 : résultats et positions",
+      "role": "comparison evidence",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "L’attention n’améliore pas tous les BiLSTM",
+        "Les positions aident fastText et AraVec dans ces runs",
+        "Les résultats négatifs restent dans la comparaison"
+      ],
+      "local_context": "All values adjusted on val. C3 is2layers128dim4heads. C4 characterCNN does not use word fastText/AraVec. Do not equate bigger architecture with better performance. Parent can choose a compact table layout but never drop required row/column.",
+      "layout": {
+        "composition": "Two clean open aligned tables with big readable numbers, main table rows BiLSTM / Attention / Transformer / Character-CNN and columns Aléatoire / fastText / AraVec: 0,7385 0,7427 0,7443 ; 0,7370 0,7476 0,7405 ; 0,7068 0,7370 0,7211 ; 0,6983 — —. Secondary short table « Transformer : sans / avec positions » rows Aléatoire0,7210/0,7068 ; fastText0,7271/0,7370 ; AraVec0,7119/0,7211. Title/subtitle « Weighted-F1 moyen sur val · 3 graines ». Small Q7. Use negative-space and clear rules, not cards.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Two clean open aligned tables with big readable numbers, main table rows BiLSTM / Attention / Transformer / Character-CNN and columns Aléatoire / fastText / AraVec: 0,7385 0,7427 0,7443 ; 0,7370 0,7476 0,7405 ; 0,7068 0,7370 0,7211 ; 0,6983 — —. Secondary short table « Transformer : sans / avec positions » rows Aléatoire0,7210/0,7068 ; fastText0,7271/0,7370 ; AraVec0,7119/0,7211. Title/subtitle « Weighted-F1 moyen sur val · 3 graines ». Small Q7. Use negative-space and clear rules, not cards."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 13,
+      "title": "DarijaBERT gelé ou ajusté",
+      "role": "architecture comparison",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "D : l’encodeur reste fixe, seule la tête apprend",
+        "E : l’encodeur et la tête seraient ajustés",
+        "Gain D / E et meilleur checkpoint : non mesurés"
+      ],
+      "local_context": "The E standard has146.9m parameters; no measured full-training time, no F1 or model winner. Two-example AdamW checks are not benchmark training. Do not depict adjusted model as available sentiment checkpoint. Frozen full encoder remains used at inference.",
+      "layout": {
+        "composition": "Left half a schematic frozen encoder + trainable head, labeled D. Right half same encoder all adjustable, labeled E. Lower ruled numeric ledger D « F1 test 0,5321 », « 435 715 paramètres entraînés », « 88,21 ms/tweet ». Under E « Campagne complète non exécutée » in terracotta and « DarijaBERT / DarijaBERT-Arabizi ». Small Q8. Add small cost note « D : tête 52,34 s + extraction partagée 486,77 s ».",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Left half a schematic frozen encoder + trainable head, labeled D. Right half same encoder all adjustable, labeled E. Lower ruled numeric ledger D « F1 test 0,5321 », « 435 715 paramètres entraînés », « 88,21 ms/tweet ». Under E « Campagne complète non exécutée » in terracotta and « DarijaBERT / DarijaBERT-Arabizi ». Small Q8. Add small cost note « D : tête 52,34 s + extraction partagée 486,77 s »."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Multi-tâche et poids λ",
+      "role": "theoretical concept",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Principe : L = L_ary + λ L_arq",
+        "Partage utile ou transfert négatif selon les tâches",
+        "Effet de λ : non mesuré dans cette étude"
+      ],
+      "local_context": "User explicitly forbids arq in actual project. This slide answers official Q9 theoretically only. Shared features may regularize, mismatched tasks can interfere; lambda determines auxiliary loss weight. No added corpus or training. Ruder2017 source.",
+      "layout": {
+        "composition": "Large centered shared-encoder branching into two theoretical task heads; explicitly a theory sketch, not an implementation. Above or below draw exact formula. Prominent label « Discussion théorique · Q9 ». At bottom a clear forest ruled statement « Périmètre du projet : ary uniquement ». Small line « Expérience arq exclue ; aucun gain annoncé ». No curve, no fake performance.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Large centered shared-encoder branching into two theoretical task heads; explicitly a theory sketch, not an implementation. Above or below draw exact formula. Prominent label « Discussion théorique · Q9 ». At bottom a clear forest ruled statement « Périmètre du projet : ary uniquement ». Small line « Expérience arq exclue ; aucun gain annoncé ». No curve, no fake performance."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Choisir avant de regarder le test",
+      "role": "data and protocol",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Critère : moyenne Weighted-F1 sur val",
+        "Trois graines pour A, C et D ; B fixe",
+        "Représentant graine 42 prédéfini, choix verrouillés"
+      ],
+      "local_context": "Selection_lock records A_char, B_camelbert, C_attention_fasttext, D_states. These are mean dev values, unlike sample16testseed42. B single deterministic externally fixed run. Do not rank using test.",
+      "layout": {
+        "composition": "Large horizontal bar chart axis0to1 values A0.7683 B0.6023 C0.7476 D0.7509, labels exact0,7683 0,6023 0,7476 0,7509. Header « Validation, avant test ». A forest emphasized and small lock motif. E note « Non mesuré ». Small text « Q1 · Q12 ». Must differ layout from sample16: vertical ordered ledger with bars central and lock/process bottom, no right KPI duplicate.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Large horizontal bar chart axis0to1 values A0.7683 B0.6023 C0.7476 D0.7509, labels exact0,7683 0,6023 0,7476 0,7509. Header « Validation, avant test ». A forest emphasized and small lock motif. E note « Non mesuré ». Small text « Q1 · Q12 ». Must differ layout from sample16: vertical ordered ledger with bars central and lock/process bottom, no right KPI duplicate."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Résultats sur le test officiel",
+      "role": "data evidence",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Weighted-F1 · représentants graine 42",
+        "A et D restent proches",
+        "E : campagne complète non exécutée"
+      ],
+      "local_context": "Sample contains A0.5365 B0.4209 C0.4962 D0.5321. This slide is the deck-level style reference.",
+      "layout": {
+        "composition": "Reuse the internally approved generated sample exactly. No regeneration needed.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Reuse the internally approved generated sample exactly. No regeneration needed."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ],
+      "sample_approved": true,
+      "use_approved_style_reference": false
+    },
+    {
+      "number": 17,
+      "title": "Lire les confusions du candidat",
+      "role": "data evidence",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "La diagonale contient les bonnes prédictions",
+        "Le neutre concentre de nombreuses décisions",
+        "Weighted-F1 test : 0,5365 ; Macro-F1 : 0,5272"
+      ],
+      "local_context": "Matrix rows negative[255,515,80], neutral[61,881,25], positive[209,426,509]. Sum2961. This matrix evidence must match the source image. No rounded counts or different case totals.",
+      "layout": {
+        "composition": "Image 2 is the strict original confusion matrix and must dominate center-left of slide; preserve all cell counts, axis labels, heatmap colors and colorbar exactly. At right two short readable comments only. Small Q1 · Q12. Source « A_char_s42 · test officiel ». Do not re-typeset or relabel the matrix.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Image 2 is the strict original confusion matrix and must dominate center-left of slide; preserve all cell counts, axis labels, heatmap colors and colorbar exactly. At right two short readable comments only. Small Q1 · Q12. Source « A_char_s42 · test officiel ». Do not re-typeset or relabel the matrix."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ],
+      "required_images": [
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\results\\figures\\modele_final.png",
+          "role": "strict input asset, scientific evidence figure",
+          "fidelity": "Preserve original data, axes, labels, legends, colors and values. Embed visibly, never redraw or replace with similar chart."
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Décalage de distribution et décision",
+      "role": "data diagnostic",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Neutre latin : val 52,6 % ; test 29,9 %",
+        "F1 test : décision val 0,5365 ; argmax 0,5536",
+        "Oracle de grille test : 0,5738, jamais déployé"
+      ],
+      "local_context": "Oracle best of original25grid points, not continuous global optimum; frozen offsets[0,.3,0], oracle[0,-.6,0]. Gap3.72F1points. Test oracle is retrospective and overoptimistic, never changes locked candidate. Proposed monitoring and recalibration are not implemented production functionality.",
+      "layout": {
+        "composition": "Embed Image2 strict conditional-distribution figure on left unchanged, about55%width. On right a large sober three-row ledger exact scores and rule labels, highlighting « Diagnostic a posteriori ». Bottom text « Surveillance et recalibration sur de nouvelles données ». Small Q10. Ensure original plot text remains visible, do not shrink into a tiny thumbnail.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Embed Image2 strict conditional-distribution figure on left unchanged, about55%width. On right a large sober three-row ledger exact scores and rule labels, highlighting « Diagnostic a posteriori ». Bottom text « Surveillance et recalibration sur de nouvelles données ». Small Q10. Ensure original plot text remains visible, do not shrink into a tiny thumbnail."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ],
+      "required_images": [
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\results\\figures\\F1_conditional_shift.png",
+          "role": "strict input asset, scientific evidence figure",
+          "fidelity": "Preserve original data, axes, labels, legends, colors and values. Embed visibly, never redraw or replace with similar chart."
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Transférer vers une écriture non vue",
+      "role": "data comparison",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Test arabe : 0,7481 avec train complet ; 0,1932 avec train latin",
+        "Test latin : 0,3461 avec train complet ; 0,2098 avec train arabe",
+        "Taille du train et couverture d’écriture changent ensemble"
+      ],
+      "local_context": "Fixed already-trained A_union_s42 is posthoc comparator. It is not the main chosen model and does not replace A_char. Both restricted models and full comparator same architecture and seed but training size differs. No cross-country transfer here.",
+      "layout": {
+        "composition": "Two spacious paired-bar groups on same0to1axis: test arabe n1367 complete0.7481vsotherwriting0.1932; test latin n1519 complete0.3461vsotherwriting0.2098. Label « TF-IDF union · graine 42 ». Clearly caption « Témoin complet : diagnostic rétrospectif » and caveat size confounding. Small Q11. Include exact observed drops55,48points and13,64points only if layout readable, otherwise notes.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Two spacious paired-bar groups on same0to1axis: test arabe n1367 complete0.7481vsotherwriting0.1932; test latin n1519 complete0.3461vsotherwriting0.2098. Label « TF-IDF union · graine 42 ». Clearly caption « Témoin complet : diagnostic rétrospectif » and caveat size confounding. Small Q11. Include exact observed drops55,48points and13,64points only if layout readable, otherwise notes."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Mesurer l’incertitude",
+      "role": "data evidence",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "1 000 rééchantillonnages bootstrap, IC à 95 %",
+        "Les graines mesurent une autre variabilité",
+        "McNemar A / D : p = 0,3231 sur les taux d’erreur"
+      ],
+      "local_context": "Intervals conditional on representative checkpoints, not seed uncertainty, never label paired error test as F1 significance. Draw mathematical interval lengths accurately, same zero-based scale to avoid exaggerating differences.",
+      "layout": {
+        "composition": "Elegant forest interval/dot chart with horizontal axis0to1 and four exact intervals: A point0.5365 low0.5171 high0.5544 ; Bpoint0.4209 low0.4024 high0.4394 ; Cpoint0.4962 low0.4777 high0.5150 ; Dpoint0.5321 low0.5129 high0.5515. Label « Weighted-F1 test · checkpoint graine 42 ». Right large p=0,3231 with plain caption « Pas de différence détectée à 5 % sur le taux d’erreur ». Bottom caveat « McNemar ne teste pas directement le F1 ». Small Q11 · Q12.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Large exact NUMERIC TABLE, no interval chart and no bars: columns Famille / Weighted-F1 test / IC bootstrap 95 %. Rows A0,5365 [0,5171 ; 0,5544], B0,4209 [0,4024 ; 0,4394], C0,4962 [0,4777 ; 0,5150], D0,5321 [0,5129 ; 0,5515]. Heading « Checkpoints graine 42 · 1 000 bootstrap ». To the right a large p=0,3231 and explanation of paired error-rate test. Clearly distinguish seed variability and bootstrap. Bottom « McNemar ne teste pas directement le F1 ». Small Q11 · Q12. Editorial open layout, no inaccurate interval geometry."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities.",
+        "Use exact numeric CI table instead of an interval plot to avoid geometric distortion."
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Trente erreurs à examiner",
+      "role": "error analysis",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "8 confusions neutre / polarisé ; 8 bruits possibles",
+        "7 ironies / autres ; 7 difficultés de graphie possibles",
+        "Votes retrouvés : 18 cas, dont 8 désaccords"
+      ],
+      "local_context": "These are verbatim short excerpts from error_analysis: row26negative->neutral and row25positive->neutral. The30sample is balanced by heuristics, not representative. Votes18/30,disagreements8/18; no human validations complete. Attention to annotation uncertainty is not proof of wrong gold label. Character model has no WordPiece tokenizer.",
+      "layout": {
+        "composition": "Left an editorial 4-category horizontal count plot with exact counts8,8,7,7 and labels shortened but accurate. Right two actual short error phrases with official/predicted labels: « mafikomch ti9a » under « Négatif → Neutre » ; « tu es magnifique » under « Positif → Neutre ». Above examples label « Extraits réels, contexte incomplet ». Bottom highly visible exact caveats « Catégories provisoires, échantillon non représentatif » and « Le taux de labels faux reste inconnu ». Small Q12. No synthetic confusion examples or human-review claim.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Left an editorial 4-category horizontal count plot with exact counts8,8,7,7 and labels shortened but accurate. Right two actual short error phrases with official/predicted labels: « mafikomch ti9a » under « Négatif → Neutre » ; « tu es magnifique » under « Positif → Neutre ». Above examples label « Extraits réels, contexte incomplet ». Bottom highly visible exact caveats « Catégories provisoires, échantillon non représentatif » and « Le taux de labels faux reste inconnu ». Small Q12. No synthetic confusion examples or human-review claim."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Une application pour tester et expliquer",
+      "role": "functional diagram",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Explorer : corpus, modèles et robustesse",
+        "Comparer : phrase, scores et règle de décision",
+        "Présenter : historique, exports et mode soutenance"
+      ],
+      "local_context": "Actual Streamlit project six pages. Models loaded sequentially locally and freed. Scores not calibrated. Input preserved between pages; selections can be compared. Demo is not evaluation. Do not show feature not built, e.g. audio, translation, live social scraping.",
+      "layout": {
+        "composition": "A beautiful conceptual functional map: large phrase entry text « hadchi zwin bzaf » at left, model checkpoint icons at center, three abstract score lanes at right WITHOUT numerical values or an asserted predicted class. Under the map six plain text sections « Vue d’ensemble », « Laboratoire », « Corpus », « Modèles », « Robustesse », « Recherche ». Clearly caption « Schéma de fonctionnement de l’application ». No fake app screenshot and no mock browser chrome.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "A beautiful conceptual functional map: large phrase entry text « hadchi zwin bzaf » at left, model checkpoint icons at center, three abstract score lanes at right WITHOUT numerical values or an asserted predicted class. Under the map six plain text sections « Vue d’ensemble », « Laboratoire », « Corpus », « Modèles », « Robustesse », « Recherche ». Clearly caption « Schéma de fonctionnement de l’application ». No fake app screenshot and no mock browser chrome."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 23,
+      "title": "Quel modèle pour un premier déploiement ?",
+      "role": "conclusion recommendation",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Choix proposé : TF-IDF caractères, candidat fixé sur val",
+        "Test 0,5365 ; 3,62 ms/tweet ; poids 5,39 Mo",
+        "Valider le latin et les commentaires mixtes avant généralisation"
+      ],
+      "local_context": "A beatsDrepresentative by tiny0.0044 not universally superior. C faster1.85ms4.17MoF10.4962; D88.21ms799.28MoF10.5321, B93.13ms416.17MoF10.4209. Choose based originaldevselection and practicality. LatinA0.3251 remains weak, mixedtest75tiny. Monitoring is proposed not built.",
+      "layout": {
+        "composition": "Classic sparse conclusion: three large typographic columns with exact metrics0,5365 /3,62ms /5,39Mo, elegant light rules, forest recommendation above. Bottom three short next steps « Nouvelles annotations », « Monitoring par écriture », « Campagne E à compléter ». Small Q8 · Q11 · Q12. Tiny caveat « Prototype proposé ; mesures sur cette machine CPU ». Avoid promotional guarantee.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Classic sparse conclusion: three large typographic columns with exact metrics0,5365 /3,62ms /5,39Mo, elegant light rules, forest recommendation above. Bottom three short next steps « Nouvelles annotations », « Monitoring par écriture », « Campagne E à compléter ». Small Q8 · Q11 · Q12. Tiny caveat « Prototype proposé ; mesures sur cette machine CPU ». Avoid promotional guarantee."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities."
+      ]
+    },
+    {
+      "number": 24,
+      "title": "Références et index des questions",
+      "role": "appendix",
+      "intent": "Expliquer une idée avec sa preuve et sa limite, en évitant une page chargée.",
+      "key_points": [
+        "Données : AfriSenti et SemEval-2023",
+        "Méthodes : DarijaBERT, fastText, NLI et multi-tâche",
+        "Résultats : notebook et artefacts locaux verrouillés"
+      ],
+      "local_context": "Appendix for teacherquestions, not part of 20-minute main talk. Per-slide sources will be in notes. Do not call literature scores local results.",
+      "layout": {
+        "composition": "Sparse but complete appendix with two clean columns. Left question index exact: Q1→3–5,15,17 ; Q2→5 ; Q3→6 ; Q4→8 ; Q5→9 ; Q6→10 ; Q7→11–12 ; Q8→13,23 ; Q9→14 ; Q10→18 ; Q11→19–20,23 ; Q12→16–17,20–21,23. These are references to slide positions, not a printed slide-number footer. Right primary bibliographic short titles: Muhammad et al., AfriSenti (2023) ; Gaanoun et al., DarijaBERT ; Bojanowski et al., fastText (2017) ; Yin et al., Zero-shot (2019) ; Ruder, Multi-Task Learning (2017). Footer « Sources détaillées dans les notes et le notebook ». No giant dense raw URLs.",
+        "spacing": "generous margins, readable at projection distance; one composition, not a dashboard"
+      },
+      "visual_elements": {
+        "main_visual": "Sparse but complete appendix with two clean columns. Left question index exact: Q1→3–5,15,17 ; Q2→5 ; Q3→6 ; Q4→8 ; Q5→9 ; Q6→10 ; Q7→11–12 ; Q8→13,23 ; Q9→14 ; Q10→18 ; Q11→19–20,23 ; Q12→16–17,20–21,23. These are references to slide positions, not a printed slide-number footer. Right primary bibliographic short titles: Muhammad et al., AfriSenti (2023) ; Gaanoun et al., DarijaBERT ; Bojanowski et al., fastText (2017) ; Yin et al., Zero-shot (2019) ; Ruder, Multi-Task Learning (2017). Footer « Sources détaillées dans les notes et le notebook ». No giant dense raw URLs. Bibliography: show only the five supplied author/title/year lines with NO extra generated descriptions beneath them. AfriSenti is multilingual African, not only dialectal Arabic. Index of12questions unchanged."
+      },
+      "constraints": [
+        "Use exact French text and numerical values.",
+        "Very large legible typography, no tiny chart legend.",
+        "No slide/page number, no watermark, no unrelated logo.",
+        "Do not add invented results or probabilities.",
+        "Bibliography descriptions must not claim AfriSenti is only Arabic. Use exact description Benchmark de sentiments pour les langues africaines, ou omit descriptions entirely. Do not add unrequested factual annotations."
+      ]
+    }
+  ],
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "runtime_tool": "tools.image_gen__imagegen",
+    "mode": "generate",
+    "model": "built-in default; not exposed",
+    "size": "16:9 requested; generated 1672x941",
+    "quality": "built-in default; not exposed",
+    "prompt_source": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\sample_prompt.txt",
+    "approved_sample_path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_16.png",
+    "sample_source": "C:\\Users\\SetupGame\\.codex\\generated_images\\01a18830-8695-79a0-b1af-1208e59d471e\\exec-fcc81a28-5420-44eb-99e2-3f59bbd67497.png",
+    "input_context_preparation": "view_image every local input; supply referenced_image_paths with approved sample as style-only and source figures as strict inputs",
+    "handoff_rule": "Use built-in imagegen, generate mode and transparent_background=false; no CLI, local drawing or overlays. Return blocker if unavailable.",
+    "approval": "Parent visual QA under explicit user waiver of all intermediate confirmations"
+  },
+  "approved_style_reference": {
+    "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_16.png",
+    "role": "approved reference slide: style only, not content or composition",
+    "fidelity": "match palette, typography mood, texture and restraint, vary layout"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "source": "https://github.com/bakrianoo/aravec",
+  "download_url": "https://bakrianoo.ewr1.vultrobjects.com/aravec/full_uni_cbow_100_twitter.zip",
+  "origin": "Copie de poids officiels disponibles dans le cache local ; aucun code ni donnée d'un autre projet n'est utilisé.",
+  "files": {
+    "full_uni_cbow_100_twitter.mdl": "f4ec79343e3389113e6e9157a6a0bc007d0fd42199f67cbed2925d150e2c848c",
+    "full_uni_cbow_100_twitter.mdl.trainables.syn1neg.npy": "e015e1ab24c6af9cb1481bbbc99e1f84dbc49fc92ff338ff00b8167ea89860eb",
+    "full_uni_cbow_100_twitter.mdl.wv.vectors.npy": "8c4febdc7cb2dc4f115fb75f1b80530b92d7d4c9ca4ed8a34eee4fc15f6167d7"
+  }
+}

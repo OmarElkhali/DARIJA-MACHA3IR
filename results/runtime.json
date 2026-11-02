@@ -1,0 +1,18 @@
+{
+  "python": "3.11.5",
+  "torch": "2.6.0+cpu",
+  "cuda": false,
+  "cpu_threads": 12,
+  "ram_gb": 13.893157958984375,
+  "available_ram_gb": 2.767101287841797,
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.11.1",
+    "torch": "2.6.0",
+    "transformers": "4.48.0",
+    "gensim": "4.3.0",
+    "streamlit": "1.43.0"
+  }
+}

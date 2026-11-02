@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "history": [
+    {
+      "from": "created",
+      "to": "jobs_prepared",
+      "at": "2026-11-01T11:36:49Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-11-01T11:53:12Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "slides_recorded",
+      "at": "2026-11-01T11:54:28Z",
+      "note": "all slide images recorded"
+    },
+    {
+      "from": "slides_recorded",
+      "to": "jobs_prepared",
+      "at": "2026-11-01T11:55:08Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-11-01T11:56:09Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "slides_recorded",
+      "at": "2026-11-01T11:57:02Z",
+      "note": "all slide images recorded"
+    },
+    {
+      "from": "slides_recorded",
+      "to": "complete",
+      "at": "2026-11-01T11:57:54Z",
+      "note": "24 slide images visually checked, PPTX assembled, notes and embedded images verified"
+    }
+  ],
+  "updated_at": "2026-11-01T11:57:54Z"
+}

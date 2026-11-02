@@ -21,6 +21,21 @@ IC bootstrap à 95 % du F1 test de E : **[0,590655 ; 0,624099]**, 1 000 réécha
 
 Le test avait déjà été consulté au cours du travail historique : ces résultats restent exploratoires. E2 utilise seulement λ=0,1 et 0,3, graine 42, trois époques maximum. La revue humaine est en attente ; aucun score indépendant n’est revendiqué. Les temps cumulés excluent les doubles comptes raw/tuned et reprises ; les époques perdues avant checkpoint et coupures réseau ne sont pas mesurables.
 
+## Récupérer le projet complet
+
+Les fichiers de modèles disponibles et les ressources AraVec sont versionnés avec **Git LFS**. Installer Git LFS, puis cloner le dépôt avec les fichiers binaires :
+
+```powershell
+git lfs install
+git clone https://github.com/OmarElkhali/DARIJA-MACHA3IR.git
+cd DARIJA-MACHA3IR
+git lfs pull
+```
+
+Le projet local synchronisé représente environ **1,78 Gio**, hors environnements virtuels et caches. `project_manifest.json` donne les fichiers, tailles, empreintes SHA-256 et exclusions d’exécution. Le checkpoint E absent localement ne peut pas être ajouté ; aucune copie n’est inventée.
+
+L’application Streamlit d’origine (`app.py`, `assets/`, `.streamlit/`), les notebooks historiques, les résultats locaux et les anciennes présentations sont également conservés. Les dossiers racine `models/` et `results/` et la soutenance originale constituent des archives de campagnes antérieures : leurs scores ne remplacent pas ceux de `campaign_v4` et du notebook final indiqué en tête de ce document.
+
 ## Notebook de présentation
 
 `notebooks/TP2_Darija_complet_resultats.ipynb` rassemble le code A/B/C/D/E/P, les analyses F/G, les tableaux et figures réellement enregistrés, avec une narration en français et le code source en annexe. **Il a été assemblé sans exécuter les notebooks.** Les sorties sont importées avec leur provenance ; les compteurs d’exécution sont réinitialisés. L’entraînement et l’évaluation finale ne sont pas déclenchés par défaut dans ce livrable.
@@ -53,7 +68,7 @@ Ouvrir **http://127.0.0.1:8765**, puis écrire une phrase. Les poids sélectionn
 ## Organisation et vérification
 
 - `src/` : préparation, modèles, apprentissage, évaluation et analyses.
-- `experiments/campaign_v4/` : paramètres, métadonnées, historiques et petits checkpoints sélectionnés. Les poids volumineux et caches externes sont exclus du dépôt.
+- `experiments/campaign_v4/` : paramètres, métadonnées, historiques, résultats et checkpoints disponibles. Les binaires sont suivis avec Git LFS ; les caches et états temporaires de reprise sont exclus.
 - `research/notebook_tables_snapshot.json` : tableaux extraits avec cellule et sortie d’origine ; `research/notebook_figures/` : figures enregistrées.
 - `site/dist/downloads/` : tableaux CSV, notebook et archive de résultats transcrits. Cette archive ne prétend pas remplacer les CSV bruts masqués par l’affichage tronqué.
 - `presentation/Darija_Sentiment_Soutenance_Resultats/` : nouvelle soutenance en 26 pages-images, générée dans le style de la soutenance originale, notes françaises intégrées et traçabilité codex-ppt. Les images ont été inspectées ; aucune inspection native PowerPoint n’est revendiquée. La version éditable antérieure reste archivée dans `presentation/Resultats_2026/`.

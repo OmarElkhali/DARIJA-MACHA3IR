@@ -1,0 +1,2 @@
+split,n,scope,weighted_f1,macro_f1,precision,recall
+dev,485,"sensibilité sans quasi-doublons train, sélection inchangée",0.7300108034977673,0.7214524961380354,0.7361209933116329,0.7360824742268042

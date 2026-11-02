@@ -1,0 +1,7 @@
+{
+  "device": "cpu",
+  "torch": "2.6.0+cpu",
+  "python": "3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]",
+  "campaign_sha256": "492f3229de392d4b58b9bfec2952b46d5d236d49977a8e213b162b21e688acaa",
+  "training_restarted": false
+}

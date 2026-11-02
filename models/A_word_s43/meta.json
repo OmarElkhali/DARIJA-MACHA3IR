@@ -1,0 +1,34 @@
+{
+  "run_id": "A_word_s43",
+  "family": "A",
+  "variant": "word",
+  "seed": 43,
+  "kind": "classical",
+  "purpose": "benchmark",
+  "config": {
+    "kind": "word",
+    "train_script": null,
+    "n_train": 5583,
+    "class_weight": "balanced",
+    "C": 1.0
+  },
+  "offsets": [
+    0.0,
+    0.3,
+    0.0
+  ],
+  "train_seconds": 0.5950671999999031,
+  "trainable_parameters": 30852,
+  "checkpoint": "models\\A_word_s43",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "data_sha256": {
+    "train": "9cf4e642bd8425e506192c161e22498e4867c7cc9814ea5bae7e2182b87c9c2b",
+    "dev": "03c4b5612080aeb7011b2d893504ccd6cd0d0aca329dd3ba34ba7defc170cd60"
+  },
+  "created_utc": "2026-10-29T15:13:00.093571+00:00",
+  "device": "cpu"
+}

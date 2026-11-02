@@ -1,0 +1,25 @@
+{
+  "status": "prepared_not_trained",
+  "notebook": "notebooks/TP2_Darija.ipynb",
+  "code_cells": 40,
+  "executed_cells": 0,
+  "training_runs_launched": 0,
+  "historical_locked_artifacts_checked": 294,
+  "historical_artifacts_changed": 0,
+  "historical_metric_rows": 184,
+  "new_campaign_metrics_exist": false,
+  "checks": [
+    "Python AST and notebook cell compilation",
+    "nbformat validation",
+    "tests/check_campaign.py: exit 0",
+    "F/G mock predictions in temporary directory only",
+    "HTML export without execution"
+  ],
+  "not_verified": [
+    "full training campaign",
+    "GPU memory and full runtime",
+    "new model scores",
+    "human classification of future errors"
+  ],
+  "official_arq_train_sha256": "edeaea0e5e57564428b1b4a17a4429381b3f2fa933000d2a6dddf83573e57745"
+}

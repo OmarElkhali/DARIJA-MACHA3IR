@@ -1,0 +1,104 @@
+{
+  "pipeline": {
+    "passed": true,
+    "stdout": "bilstm (12, 3) forward/backward OK\nattention (12, 3) forward/backward OK\ntransformer (12, 3) forward/backward OK\ncharcnn (12, 3) forward/backward OK\n  epoch 1/1 loss=1.0981 dev=0.3111\n  epoch 1/1 loss=1.2151 dev=0.1667\nProtocole, FastText, encodeur/tête, accumulation et masques OK. Ces vérifications ne sont pas des expériences scientifiques.\n",
+    "stderr": "",
+    "verified_utc": "2026-10-29T19:14:25.084557+00:00",
+    "invalid_scores_and_offsets_rejected": true
+  },
+  "streamlit": {
+    "passed": true,
+    "scope": "six espaces, modèles A/B/C/D réels, filtres, saisies invalides, checkpoint absent, comparaison de graines, historique et soutenance",
+    "artifact": "results/ui_verification.json",
+    "browser_visual_verification": "non réalisée : contrôle navigateur arrêté par l’outil",
+    "verified_utc": "2026-10-29T19:12:10.119576+00:00",
+    "http_health_status": 200
+  },
+  "notebook": {
+    "code_cells": 40,
+    "executed": 40,
+    "errors": 0,
+    "all_have_output": true,
+    "verified_utc": "2026-10-29T19:14:25.084557+00:00",
+    "html_synchronized": true,
+    "sha256": "76738aad47729f0ec1f399eb2892a316bbb045d38511bc24518d2191cd89091f",
+    "html_sha256": "69d48a39dc4375f4d79b724a94d480a265ac1d88f6801f53ffcd6df0ba983955"
+  },
+  "benchmark": {
+    "distinct_runs": 76,
+    "results_rows": 184,
+    "by_family": {
+      "A": 18,
+      "B": 4,
+      "C": 45,
+      "D": 9
+    },
+    "test_n": 2961,
+    "ary_only": true
+  },
+  "figures": [
+    "A_dev.png",
+    "A_dev_confusion.png",
+    "attention_C.png",
+    "attention_D.png",
+    "curves_C.png",
+    "curves_D.png",
+    "F1_conditional_shift.png",
+    "F1_shift.png",
+    "labels_train_dev.png",
+    "modele_final.png",
+    "scripts.png",
+    "test_A.png",
+    "test_B.png",
+    "test_C.png",
+    "test_D.png"
+  ],
+  "pretrained_technical_steps": [
+    {
+      "model_id": "SI2M-Lab/DarijaBERT",
+      "test": "one_forward_backward_adamw_step",
+      "n_train_examples": 2,
+      "shape": [
+        2,
+        3
+      ],
+      "seconds": 4.731220300000132,
+      "benchmark": false,
+      "checkpoint_saved": false
+    },
+    {
+      "model_id": "SI2M-Lab/DarijaBERT-arabizi",
+      "test": "one_forward_backward_adamw_step",
+      "n_train_examples": 2,
+      "shape": [
+        2,
+        3
+      ],
+      "seconds": 4.502302000000782,
+      "benchmark": false,
+      "checkpoint_saved": false
+    }
+  ],
+  "checkpoints": {
+    "passed": true,
+    "count": 76,
+    "artifact": "results/checkpoint_verification.json",
+    "max_absolute_score_difference": 1.201689148189189e-07,
+    "verified_utc": "2026-10-29T19:14:25.084557+00:00"
+  },
+  "maintenance": {
+    "verified_utc": "2026-10-29T19:14:25.084557+00:00",
+    "benchmark_results_unchanged": true,
+    "checkpoints_locked": true,
+    "source_sha256": {
+      "app.py": "71d97ffb9f42a1b958222d7e3622184de739336cc0cc878748c7fcf9bb14bbe2",
+      "src/models.py": "8f1fd07028c761d7931ec109a0dd79a0c5ceb90c14201f5e66939dd1371a4cf2",
+      "src/train.py": "b04390effe18a0de981c35b976734fb5e3ba494b10d34f0781b9b74a9e1b0e80",
+      "src/evaluate.py": "fc7a726ae54d0510a926927f38b80d38f7fb9dc0c864911684f13398b1e60edf",
+      "scripts/execute_notebook.py": "535690d2d5ae8eec8b5b107ddaa40f77f3d8fd84dbb0d3aec49d32f87defed7f",
+      "scripts/verify_delivery.py": "fb08f9d94bc852f447b2496d74688d3b2ae2842dae8da4ed3f9b9669c457ddbc",
+      "tests/check_app.py": "93e79813907214dcc9082272dd27191ae7d3f752c503655935a5ec8f35fc4639",
+      "tests/check_pipeline.py": "b6c788006a66a1869ab5f248cc77a1e80cf51679cc8d2359bc13d3a4586e9aff"
+    }
+  }
+}

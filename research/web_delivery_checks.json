@@ -44,7 +44,7 @@
           0.3,
           0.0
         ],
-        "milliseconds": 3621.3,
+        "milliseconds": 11.4,
         "status": "ok"
       },
       {
@@ -66,7 +66,7 @@
           0.6,
           0.3
         ],
-        "milliseconds": 5283.5,
+        "milliseconds": 181.4,
         "status": "ok"
       },
       {
@@ -88,7 +88,7 @@
           0.3,
           0.3
         ],
-        "milliseconds": 50.6,
+        "milliseconds": 8.2,
         "status": "ok"
       },
       {
@@ -110,7 +110,7 @@
           -0.3,
           0.3
         ],
-        "milliseconds": 1484.0,
+        "milliseconds": 222.9,
         "status": "ok"
       },
       {
@@ -138,7 +138,7 @@
           0.3,
           0.0
         ],
-        "milliseconds": 685.2,
+        "milliseconds": 12.1,
         "status": "ok"
       }
     ],

@@ -1,0 +1,7 @@
+{
+  "url": "https://raw.githubusercontent.com/afrisenti-semeval/afrisent-semeval-2023/5aec3cfcf87b59f885e98641f72e52182776429d/data/ary/test.tsv",
+  "sha256": "1bef08f24090d001c7443c9a90781609901608361dd9a3f8a93dbf3fa68a2417",
+  "matches_pinned_reference": true,
+  "literal_positiveHOTO_in_upstream": 14,
+  "literal_COpositive22_in_upstream": 1
+}

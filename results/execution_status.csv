@@ -1,0 +1,29 @@
+family,variant,seeds,status
+A,majority,"[42, 43, 44]",exécuté
+A,word,"[42, 43, 44]",exécuté
+A,char,"[42, 43, 44]",exécuté
+A,union,"[42, 43, 44]",exécuté
+B,nli_ar,[42],exécuté
+B,nli_fr,[42],exécuté
+B,nli_en,[42],exécuté
+B,camelbert,[42],exécuté
+C,bilstm_random,"[42, 43, 44]",exécuté
+C,bilstm_fasttext,"[42, 43, 44]",exécuté
+C,bilstm_aravec,"[42, 43, 44]",exécuté
+C,attention_random,"[42, 43, 44]",exécuté
+C,attention_fasttext,"[42, 43, 44]",exécuté
+C,attention_aravec,"[42, 43, 44]",exécuté
+C,transformer_random,"[42, 43, 44]",exécuté
+C,transformer_fasttext,"[42, 43, 44]",exécuté
+C,transformer_aravec,"[42, 43, 44]",exécuté
+C,transformer_random_nopos,"[42, 43, 44]",exécuté
+C,transformer_fasttext_nopos,"[42, 43, 44]",exécuté
+C,transformer_aravec_nopos,"[42, 43, 44]",exécuté
+C,charcnn_random,"[42, 43, 44]",exécuté
+C,attention_random_weighted,"[42, 43, 44]",exécuté
+C,attention_random_oversampling,"[42, 43, 44]",exécuté
+D,cls,"[42, 43, 44]",exécuté
+D,mean,"[42, 43, 44]",exécuté
+D,states,"[42, 43, 44]",exécuté
+E,darijabert,"[42, 43, 44]",non exécuté (0/3 graines)
+E,arabizi,"[42, 43, 44]",non exécuté (0/3 graines)

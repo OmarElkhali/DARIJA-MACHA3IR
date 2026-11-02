@@ -1,0 +1,5 @@
+{
+  "variant": "arabizi",
+  "model_id": "SI2M-Lab/DarijaBERT-arabizi",
+  "lambda_zero_reference": "arabizi"
+}

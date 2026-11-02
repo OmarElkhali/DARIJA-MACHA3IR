@@ -1,0 +1,17 @@
+[
+  {
+    "model": "SI2M-Lab/DarijaBERT",
+    "status": "cached",
+    "path": "C:\\Users\\SetupGame\\.cache\\huggingface\\hub\\models--SI2M-Lab--DarijaBERT\\snapshots\\4025e5465fc6b3c9aa516839dd0bd039fa2e6d99"
+  },
+  {
+    "model": "CAMeL-Lab/bert-base-arabic-camelbert-da-sentiment",
+    "status": "cached",
+    "path": "C:\\Users\\SetupGame\\.cache\\huggingface\\hub\\models--CAMeL-Lab--bert-base-arabic-camelbert-da-sentiment\\snapshots\\b0df630d23e5aa5f8a326017605337f6d0863ecd"
+  },
+  {
+    "model": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "status": "cached",
+    "path": "C:\\Users\\SetupGame\\.cache\\huggingface\\hub\\models--MoritzLaurer--mDeBERTa-v3-base-xnli-multilingual-nli-2mil7\\snapshots\\b5113eb38ab63efdd7f280f8c144ea8b13f978ce"
+  }
+]

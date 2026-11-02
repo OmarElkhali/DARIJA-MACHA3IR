@@ -1,0 +1,36 @@
+{
+  "run_id": "B_nli_fr_s42",
+  "family": "B",
+  "variant": "nli_fr",
+  "seed": 42,
+  "kind": "pretrained",
+  "purpose": "benchmark",
+  "config": {
+    "kind": "nli",
+    "language": "fr",
+    "model_id": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "revision": "b5113eb38ab63efdd7f280f8c144ea8b13f978ce",
+    "local_training": false,
+    "device": "cpu",
+    "max_length": 128
+  },
+  "offsets": [
+    0.0,
+    0.6,
+    -0.6
+  ],
+  "train_seconds": 0.0,
+  "trainable_parameters": 0,
+  "checkpoint": "models\\B_nli_fr_s42",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "data_sha256": {
+    "train": "9cf4e642bd8425e506192c161e22498e4867c7cc9814ea5bae7e2182b87c9c2b",
+    "dev": "03c4b5612080aeb7011b2d893504ccd6cd0d0aca329dd3ba34ba7defc170cd60"
+  },
+  "created_utc": "2026-10-29T15:51:02.761391+00:00",
+  "device": "cpu"
+}

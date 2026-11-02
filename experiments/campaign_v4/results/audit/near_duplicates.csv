@@ -1,0 +1,37 @@
+row_id,reference_row_id,similarity,text,reference_text,reference_split,query_split
+ary:dev:94,ary:train:2098,0.9426841391211729,hhhhhhhhhhhhhhhhhhhhhhh zwina 3andk hadii kighandiro lihaa,nari wili la hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,train,dev
+ary:dev:125,ary:train:2098,0.9043948470904399,bach li jab tasswitt ytssma l maroc w l algerie sawto lih hhhhhhhhhhhhhhhhhhhhhh,nari wili la hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,train,dev
+ary:dev:197,ary:train:3797,0.9999999999999999,كتحلموا اغلبية الشعب سيصوت على هدا الرجل ',كتحلموا اغلبية الشعب سيصوت على هدا الرجل ',train,dev
+ary:dev:199,ary:train:3207,0.9411892411900883,سنصوت على السي بنكيران إن شاء الله رجل الثقة بامتياز غير كونوا هانين وديما 💡,سنصوت على السي بنكيران إن شاء الله رجل الثقة بامتياز غير كونوا هانين,train,dev
+ary:dev:243,ary:train:3468,1.0,اناس اكثريتهم ذوو قلوب غليظة مصفحة لا يفهمون ماهي الانسانية',اناس اكثريتهم ذوو قلوب غليظة مصفحة لا يفهمون ماهي الانسانية ',train,dev
+ary:dev:246,ary:train:3492,1.0,بﻻدي ومنبع أجدادي أفتخر بها أينما دهبت روعة من الجمال وخﻻبة بمناطرها طبيعية',بﻻدي ومنبع أجدادي أفتخر بها أينما دهبت روعة من الجمال وخﻻبة بمناطرها طبيعية',train,dev
+ary:dev:280,ary:train:2098,0.9780260882754184,hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,nari wili la hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,train,dev
+ary:dev:368,ary:train:216,1.0,- هنيئا لكم يا شعب المغرب الحبيب بالفنان الرائع سعد لمجرد',هنيئا لكم يا شعب المغرب الحبيب بالفنان الرائع سعد لمجرد',train,dev
+ary:dev:445,ary:train:5149,0.9076114657361845,li maghribi o 3ziza 3lih ibtissam o 3endo nefss 3la bnat blado yedir unfollow l hadak konan f instagram hit zaad fih bazaaf,li maghribi o 3ziza 3lih ibtissam o 3endo nefss 3la bnat blado yedir unfollow et bloque l hadak konan f instagram hit zaad,train,dev
+ary:test:739,ary:train:2098,0.9289130920995289,hhhhhhhhhhhhhhhhhhhhhhhhhh nari 9taltini ou fakartini bih maskin moul kant khdam,nari wili la hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,train,test
+ary:test:922,ary:train:2098,0.9944648013620156,hhhhhhhhhhhhhhhhhhhhhhhhhh Kelb l ma hhhhhhhhhhhhhhhhhhhhhhhh,nari wili la hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,train,test
+ary:test:955,ary:train:3246,0.959542495065042,الســـــــــــــــــــــــــــــودان نقف قلبا وقالبا معكم لموازرة قضية محسن فكري ومامشي معاكم باس,ﺍﻧﻪ ﺍﻟﻌﺎﻟﻤﻲ ﺍﻟﻌﺎﻟﻤــــــــــــــــــــــــــﻰ ﺍﻟــــــــــﺪﻭﺯﻯ ﻳﺎ',train,test
+ary:test:1002,ary:train:2098,0.949175423326431,hhhhhhhhhhhhhh paris ....daba nchofo achrebhet hhhhhhhhhhhhh,nari wili la hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,train,test
+ary:test:1221,ary:train:3857,0.9624030199535086,هههههههههههههههههههههههههههههههههههههههههههه واش هادو او الأصالة والمعاصرة عايشين معانا فبلاد وحدة,ههههههههه,train,test
+ary:test:1254,ary:train:2098,0.9301381088074153,hhhhhhhhhhhhhhhhhhhhh ila makheft nkdeb eval intihar,nari wili la hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,train,test
+ary:test:1425,ary:train:3246,0.9648253518084386,من الســــــــــــــــــــــــــــــودان نقف قلبا وقالبا مع قضية محسن فكري ومامشي معاكم باس,ﺍﻧﻪ ﺍﻟﻌﺎﻟﻤﻲ ﺍﻟﻌﺎﻟﻤــــــــــــــــــــــــــﻰ ﺍﻟــــــــــﺪﻭﺯﻯ ﻳﺎ',train,test
+ary:test:1632,ary:train:2932,0.925330686143804,o bzaaaaaaaaaaaaaaaaaf hadi mafraskch,yaaaaaaaaaaaaaaaaaaaaa rab w chokr el akbar lik adam,train,test
+ary:test:2052,ary:train:2098,0.9637888088524588,hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh halit tweeter 3la had noktaa kandhak mn 9alb,nari wili la hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,train,test
+ary:test:2128,ary:train:3857,0.9098272362726307,واش هادي الحسيمة كاملة هههههههههههههههه كون غير جبتوها حدانا,ههههههههه,train,test
+ary:test:2320,ary:train:1882,0.9274771421446962,7na m3a hananeeeeeeeeeeeeeeeeeeeeee ou sirii tmotiii okkk nti ou derab rassk nta m3a 7it ok,sm3o nass li m3achrinnha 9alb tayeeeeeeeeeeeeeeeeeeeeeeb matkhyluuch,train,test
+ary:test:2478,ary:train:3729,0.9247866111567541,plz fin ja had hay abd lkrim plz ghir na3ti lina plzzzzzzzzzzzzzzzz,donya kanhbk bzazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzf khtk soukaina mn bladk,train,test
+ary:test:2570,ary:train:3857,0.9552851052829787,الحمد لله هههههههههههههههههههههههههههههههه البام بقيتو فيا شحاااال تاع لفلوس عطيتو لناس,ههههههههه,train,test
+ary:test:2597,ary:train:1882,0.9417320820469146,maryuuuuma Ajii db dbd db db Bghiteeeeeeeeeeeeeeeeeeeeeeeeeeek,sm3o nass li m3achrinnha 9alb tayeeeeeeeeeeeeeeeeeeeeeeb matkhyluuch,train,test
+ary:test:2828,ary:train:2098,0.9727436941563884,hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh siri hssan ghir sda3 hta chwiya oraj3ii hhhhh,nari wili la hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,train,test
+ary:test:2839,ary:train:2098,0.9299668811385741,slm hana jiiit hna hh fin ma mchiti ghada tl9ayni hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh hahahahaha,nari wili la hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,train,test
+ary:test:133,ary:dev:280,0.918829382841108,hhhhhhhhhhhh hadchi 9lil f 79houm,hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,dev,test
+ary:test:274,ary:dev:280,0.903427525721059,"hhhhhhhhhhhhhhh wlahila nafs l7aja fekert fiha, 9elt f khatri dak deri li f kerchha korah dar lmostach w bda kaykmi hhhhhhhh",hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,dev,test
+ary:test:739,ary:dev:280,0.943386577641889,hhhhhhhhhhhhhhhhhhhhhhhhhh nari 9taltini ou fakartini bih maskin moul kant khdam,hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,dev,test
+ary:test:772,ary:dev:280,0.9034186783267684,hhhhhhhhhhhhh dahktinii ou makan fya li dhhakzidi chi3er hhhhh,hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,dev,test
+ary:test:922,ary:dev:280,0.9845306978908342,hhhhhhhhhhhhhhhhhhhhhhhhhh Kelb l ma hhhhhhhhhhhhhhhhhhhhhhhh,hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,dev,test
+ary:test:1002,ary:dev:280,0.9659947740173569,hhhhhhhhhhhhhh paris ....daba nchofo achrebhet hhhhhhhhhhhhh,hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,dev,test
+ary:test:1254,ary:dev:280,0.9539900335642226,hhhhhhhhhhhhhhhhhhhhh ila makheft nkdeb eval intihar,hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,dev,test
+ary:test:1718,ary:dev:280,0.9066916606769319,hhhhhhhhhhhhhhh nn ana brit ngol tamo hit m3ah l3enza hut kitchabho,hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,dev,test
+ary:test:2052,ary:dev:280,0.9714786382162386,hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh halit tweeter 3la had noktaa kandhak mn 9alb,hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,dev,test
+ary:test:2828,ary:dev:280,0.9751237749085897,hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh siri hssan ghir sda3 hta chwiya oraj3ii hhhhh,hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,dev,test
+ary:test:2839,ary:dev:280,0.9439387969213031,slm hana jiiit hna hh fin ma mchiti ghada tl9ayni hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh hahahahaha,hhhhhhhhhhhhhhhhhhhhhhhh ana farhanaa mn 2 jawanib hhhhhhhhhhhh,dev,test

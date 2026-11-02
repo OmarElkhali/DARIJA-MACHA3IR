@@ -1,0 +1,7 @@
+{
+  "method": "aravec",
+  "covered": 3581,
+  "vocabulary": 7695,
+  "dimension": 128,
+  "aravec_path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\models\\resources\\aravec\\full_uni_cbow_100_twitter.mdl"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "real_pretrained": false,
+  "checks": [
+    "A_union_s42",
+    "P_union_conservative_v2_s42",
+    "P_union_without_emojis_s42",
+    "P_union_without_punctuation_s42",
+    "P_union_without_both_s42",
+    "P_union_emoji_only_s42",
+    "P_union_punctuation_only_s42",
+    "B_nli_fr_s42",
+    "B_camelbert_s42",
+    "C_bilstm_random_s42",
+    "C_attention_random_s42",
+    "C_transformer_random_s42",
+    "C_charcnn_random_s42",
+    "C_attention_fasttext_s42",
+    "D_cls_s42",
+    "D_mean_s42",
+    "D_states_s42",
+    "E_darijabert_s42",
+    "E_arabizi_s42",
+    "E_darijabert_mtl_l0.1_s42",
+    "P_darijabert_without_both_s42"
+  ],
+  "scope": "Petit sous-ensemble officiel ; vérification de fonctionnement, pas performance de benchmark. Encodeurs minuscules aléatoires : poids officiels et mémoire T4 non vérifiés."
+}

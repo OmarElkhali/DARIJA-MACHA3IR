@@ -1,0 +1,7 @@
+{
+  "encoder_and_head_parameters": 146893059,
+  "fp32_weights_grad_adam_and_best_gb_lower_bound": 2.7360964380204678,
+  "available_ram_gb_observed": 2.3352279663085938,
+  "cuda": false,
+  "note": "Exclut activations, chargement, bibliotheques, cache et temporaires ; campagne E complete non executee."
+}

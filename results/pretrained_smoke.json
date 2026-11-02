@@ -1,0 +1,26 @@
+[
+  {
+    "model_id": "SI2M-Lab/DarijaBERT",
+    "test": "one_forward_backward_adamw_step",
+    "n_train_examples": 2,
+    "shape": [
+      2,
+      3
+    ],
+    "seconds": 4.731220300000132,
+    "benchmark": false,
+    "checkpoint_saved": false
+  },
+  {
+    "model_id": "SI2M-Lab/DarijaBERT-arabizi",
+    "test": "one_forward_backward_adamw_step",
+    "n_train_examples": 2,
+    "shape": [
+      2,
+      3
+    ],
+    "seconds": 4.502302000000782,
+    "benchmark": false,
+    "checkpoint_saved": false
+  }
+]

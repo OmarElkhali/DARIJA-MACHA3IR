@@ -1,0 +1,135 @@
+{
+  "verified_utc": "2026-10-29T19:12:10.119576+00:00",
+  "source_sha256": {
+    "app.py": "71d97ffb9f42a1b958222d7e3622184de739336cc0cc878748c7fcf9bb14bbe2",
+    "assets/style.css": "8e49f3f8252b815731bb450359e51746f7cc9e610036fa78d1baa7ea15c38048",
+    "src/models.py": "8f1fd07028c761d7931ec109a0dd79a0c5ceb90c14201f5e66939dd1371a4cf2",
+    "src/train.py": "b04390effe18a0de981c35b976734fb5e3ba494b10d34f0781b9b74a9e1b0e80",
+    "src/evaluate.py": "fc7a726ae54d0510a926927f38b80d38f7fb9dc0c864911684f13398b1e60edf",
+    "tests/check_app.py": "93e79813907214dcc9082272dd27191ae7d3f752c503655935a5ec8f35fc4639"
+  },
+  "pages": {
+    "Vue d’ensemble": {
+      "charts": 3,
+      "exceptions": 0
+    },
+    "Laboratoire": {
+      "charts": 0,
+      "exceptions": 0
+    },
+    "Corpus": {
+      "charts": 5,
+      "exceptions": 0
+    },
+    "Modèles": {
+      "charts": 1,
+      "exceptions": 0
+    },
+    "Robustesse": {
+      "charts": 9,
+      "exceptions": 0
+    },
+    "Recherche": {
+      "charts": 0,
+      "exceptions": 0
+    }
+  },
+  "families_documented": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "real_prediction_families": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "real_predictions": [
+    {
+      "run_id": "A_char_s42",
+      "name": "TF-IDF caractères",
+      "family": "A",
+      "seed": 42,
+      "prediction": "positive",
+      "offsets": [
+        0.0,
+        0.3,
+        0.0
+      ],
+      "seconds_with_load": 1.019843199999741,
+      "negative": 0.17111499514032227,
+      "neutral": 0.15813183383001547,
+      "positive": 0.6707531710296623
+    },
+    {
+      "run_id": "B_camelbert_s42",
+      "name": "CAMeLBERT sentiment",
+      "family": "B",
+      "seed": 42,
+      "prediction": "neutral",
+      "offsets": [
+        0.0,
+        0.6,
+        0.3
+      ],
+      "seconds_with_load": 4.879574700000376,
+      "negative": 0.14147911965847015,
+      "neutral": 0.6659494042396545,
+      "positive": 0.19257153570652008
+    },
+    {
+      "run_id": "C_attention_fasttext_s42",
+      "name": "Attention · fastText",
+      "family": "C",
+      "seed": 42,
+      "prediction": "positive",
+      "offsets": [
+        0.0,
+        0.3,
+        -0.3
+      ],
+      "seconds_with_load": 0.028821500000049127,
+      "negative": 0.12795190513134003,
+      "neutral": 0.3053567409515381,
+      "positive": 0.5666913390159607
+    },
+    {
+      "run_id": "D_states_s42",
+      "name": "États + BiLSTM-attention",
+      "family": "D",
+      "seed": 42,
+      "prediction": "neutral",
+      "offsets": [
+        0.0,
+        0.0,
+        -0.6
+      ],
+      "seconds_with_load": 0.7794732000002114,
+      "negative": 0.07696960121393204,
+      "neutral": 0.7914459109306335,
+      "positive": 0.13158445060253143
+    }
+  ],
+  "available_checkpoints": 76,
+  "corpus_test_labels_hidden": true,
+  "empty_input": true,
+  "empty_model_selection": true,
+  "missing_checkpoint_handled": true,
+  "corpus_to_laboratory": true,
+  "session_history": true,
+  "presentation_navigation": true,
+  "distinct_seed_labels": true,
+  "history_replay": true,
+  "draft_and_model_selection_survive_navigation": true,
+  "stale_model_selection_warning": true,
+  "incomplete_and_malformed_checkpoints_handled": true,
+  "invalid_probabilities_rejected": true,
+  "local_inference_without_http_requests": true,
+  "all_prediction_panels_selectable": true,
+  "corpus_filters_reset": true,
+  "benchmark_checkpoints_unchanged": true,
+  "browser_visual_verification": "non réalisée : contrôle navigateur arrêté par l’outil"
+}

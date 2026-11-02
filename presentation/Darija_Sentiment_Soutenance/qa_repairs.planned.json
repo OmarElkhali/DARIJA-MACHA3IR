@@ -1,0 +1,7 @@
+{
+  "repair_after_main_generation": {
+    "slide_02": "Generated subtitle wrongly suggests the three different phrases have identical content. Replace with explicit examples-of-scripts subtitle.",
+    "slide_11": "Attention mini-chart numeric values are right but bar proportions are approximate. Replace mini-chart by an exact numeric table and simplify recurrent diagram.",
+    "slide_20": "Interval-chart geometry repeatedly inaccurate; replaced by exact numeric confidence-interval table via same built-in backend."
+  }
+}

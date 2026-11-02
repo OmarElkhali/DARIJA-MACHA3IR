@@ -1,0 +1,32 @@
+[
+  {
+    "split": "train",
+    "pooling": "cls",
+    "seconds": 47.67605763999927
+  },
+  {
+    "split": "dev",
+    "pooling": "cls",
+    "seconds": 3.94361747900075
+  },
+  {
+    "split": "train",
+    "pooling": "mean",
+    "seconds": 46.49462387099993
+  },
+  {
+    "split": "dev",
+    "pooling": "mean",
+    "seconds": 4.134631222999815
+  },
+  {
+    "split": "train",
+    "pooling": "states",
+    "seconds": 58.75511686199934
+  },
+  {
+    "split": "dev",
+    "pooling": "states",
+    "seconds": 5.423871324999709
+  }
+]

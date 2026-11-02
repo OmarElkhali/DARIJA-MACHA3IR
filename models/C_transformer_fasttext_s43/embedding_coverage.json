@@ -1,0 +1,7 @@
+{
+  "method": "fasttext",
+  "covered": 7695,
+  "vocabulary": 7695,
+  "dimension": 128,
+  "aravec_path": "None"
+}

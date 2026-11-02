@@ -1,0 +1,9 @@
+{
+  "kind": "camel",
+  "language": "fr",
+  "model_id": "CAMeL-Lab/bert-base-arabic-camelbert-da-sentiment",
+  "revision": "b0df630d23e5aa5f8a326017605337f6d0863ecd",
+  "local_training": false,
+  "device": "cpu",
+  "max_length": 128
+}

@@ -1,0 +1,33 @@
+{
+  "status": "prepared_and_checked_without_training",
+  "campaign": "campaign_v3",
+  "code_cells": 40,
+  "notebook_executed_cells": 0,
+  "historical_locked_artifacts_checked": 294,
+  "historical_artifacts_changed": 0,
+  "checks": [
+    "tests/check_campaign.py: exit 0",
+    "tests/check_notebook_setup.py: exit 0",
+    "Python AST and nbformat validation",
+    "embedded code/data extraction without project files",
+    "read-only project staging",
+    "pip and network simulations only",
+    "interrupted D2 mmap cleanup",
+    "atomic run publication and resume",
+    "F/G with artificial predictions in temporary directories",
+    "Python 3.11 and 3.13 requirement markers tested independently",
+    "CPython 3.13.7 actual scientific/tokenizer imports and AraVec loading",
+    "old embedded runtime detected and isolated from updated runtime"
+  ],
+  "not_verified": [
+    "full GPU training campaign",
+    "real peak GPU memory",
+    "new benchmark scores",
+    "full external model weight downloads"
+  ],
+  "python_profiles": [
+    "3.10-3.12: historical stack",
+    "3.13: NumPy 2.2.6, SciPy 1.15.3, gensim 4.4.0"
+  ],
+  "python313_actual_check": "research/python313_import_verification.json"
+}

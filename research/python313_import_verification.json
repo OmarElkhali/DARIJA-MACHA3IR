@@ -1,0 +1,20 @@
+{
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "imports": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.2.3",
+    "sklearn": "1.6.1",
+    "gensim": "4.4.0",
+    "matplotlib": "3.10.3",
+    "sentencepiece": "0.2.1",
+    "transformers": "4.48.0",
+    "tokenizers": "0.21.4"
+  },
+  "torch_tested": false,
+  "training_executed": false,
+  "aravec_dimension": 100,
+  "aravec_vocabulary": 1259756,
+  "interpreter_source": "https://www.python.org/ftp/python/3.13.7/python-3.13.7-embed-amd64.zip",
+  "interpreter_zip_sha256": "f6cca216a359be84797cabb54149ce5e062afb16cc7567eb7fc51cacb2d86b65"
+}

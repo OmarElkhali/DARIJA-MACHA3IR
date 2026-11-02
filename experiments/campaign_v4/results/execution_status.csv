@@ -1,0 +1,85 @@
+part,run_id,status
+A,A_majority_s42,exécuté
+A,A_word_s42,exécuté
+A,A_char_s42,exécuté
+A,A_union_s42,exécuté
+A,A_union_C0.25_s42,exécuté
+A,A_union_C4_s42,exécuté
+A,A_union_train_arabic_s42,exécuté
+A,A_union_train_latin_s42,exécuté
+B,B_nli_ar_s42,exécuté
+B,B_nli_fr_s42,exécuté
+B,B_nli_en_s42,exécuté
+B,B_camelbert_s42,exécuté
+C,C_bilstm_random_s42,exécuté
+C,C_bilstm_fasttext_s42,exécuté
+C,C_bilstm_aravec_s42,exécuté
+C,C_attention_random_s42,exécuté
+C,C_attention_fasttext_s42,exécuté
+C,C_attention_aravec_s42,exécuté
+C,C_transformer_random_s42,exécuté
+C,C_transformer_random_nopos_s42,exécuté
+C,C_transformer_fasttext_s42,exécuté
+C,C_transformer_fasttext_nopos_s42,exécuté
+C,C_transformer_aravec_s42,exécuté
+C,C_transformer_aravec_nopos_s42,exécuté
+C,C_charcnn_random_s42,exécuté
+C,C_bilstm_random_s43,exécuté
+C,C_bilstm_fasttext_s43,exécuté
+C,C_bilstm_aravec_s43,exécuté
+C,C_attention_random_s43,exécuté
+C,C_attention_fasttext_s43,exécuté
+C,C_attention_aravec_s43,exécuté
+C,C_transformer_random_s43,exécuté
+C,C_transformer_random_nopos_s43,exécuté
+C,C_transformer_fasttext_s43,exécuté
+C,C_transformer_fasttext_nopos_s43,exécuté
+C,C_transformer_aravec_s43,exécuté
+C,C_transformer_aravec_nopos_s43,exécuté
+C,C_charcnn_random_s43,exécuté
+C,C_bilstm_random_s44,exécuté
+C,C_bilstm_fasttext_s44,exécuté
+C,C_bilstm_aravec_s44,exécuté
+C,C_attention_random_s44,exécuté
+C,C_attention_fasttext_s44,exécuté
+C,C_attention_aravec_s44,exécuté
+C,C_transformer_random_s44,exécuté
+C,C_transformer_random_nopos_s44,exécuté
+C,C_transformer_fasttext_s44,exécuté
+C,C_transformer_fasttext_nopos_s44,exécuté
+C,C_transformer_aravec_s44,exécuté
+C,C_transformer_aravec_nopos_s44,exécuté
+C,C_charcnn_random_s44,exécuté
+C_balance,C_bilstm_aravec_weighted_s42,exécuté
+C_balance,C_bilstm_aravec_oversampling_s42,exécuté
+C_balance,C_bilstm_aravec_weighted_s43,exécuté
+C_balance,C_bilstm_aravec_oversampling_s43,exécuté
+C_balance,C_bilstm_aravec_weighted_s44,exécuté
+C_balance,C_bilstm_aravec_oversampling_s44,exécuté
+D,D_cls_s42,exécuté
+D,D_mean_s42,exécuté
+D,D_states_s42,exécuté
+D,D_states_s43,exécuté
+D,D_states_s44,exécuté
+E1,E_darijabert_s42,exécuté
+E1,E_darijabert_s43,exécuté
+E1,E_darijabert_s44,exécuté
+E1,E_arabizi_s42,exécuté
+E1,E_arabizi_s43,exécuté
+E1,E_arabizi_s44,exécuté
+E2,choix dev en attente,non exécuté
+P,P_union_conservative_v2_s42,non exécuté
+P,P_union_without_emojis_s42,non exécuté
+P,P_union_without_punctuation_s42,non exécuté
+P,P_union_without_both_s42,non exécuté
+P,P_union_emoji_only_s42,non exécuté
+P,P_union_punctuation_only_s42,non exécuté
+P,P_darijabert_without_emojis_s42,non exécuté
+P,P_darijabert_without_emojis_s43,non exécuté
+P,P_darijabert_without_emojis_s44,non exécuté
+P,P_darijabert_without_punctuation_s42,non exécuté
+P,P_darijabert_without_punctuation_s43,non exécuté
+P,P_darijabert_without_punctuation_s44,non exécuté
+P,P_darijabert_without_both_s42,non exécuté
+P,P_darijabert_without_both_s43,non exécuté
+P,P_darijabert_without_both_s44,non exécuté

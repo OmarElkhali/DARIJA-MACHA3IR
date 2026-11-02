@@ -9,3 +9,5 @@ __pycache__/
 experiments/**/cache/
 experiments/**/resume.pt
 experiments/**/.in_progress
+
+**/secrets.toml

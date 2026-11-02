@@ -1,0 +1,8 @@
+{
+  "first": "A_char_s42",
+  "second": "D_states_s42",
+  "first_only_correct": 333,
+  "second_only_correct": 307,
+  "p_exact": 0.32305055146893763,
+  "scope": "différence de taux d'erreur apparié, pas test direct du F1"
+}
