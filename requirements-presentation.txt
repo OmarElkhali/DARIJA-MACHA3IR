@@ -1,0 +1,7 @@
+python-pptx>=1.0.2,<2
+matplotlib>=3.7,<4
+pillow>=10
+nbconvert>=7,<8
+nbformat>=5.9,<6
+pandas>=2.2,<3
+lxml>=5

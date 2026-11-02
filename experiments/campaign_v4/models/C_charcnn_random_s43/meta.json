@@ -1,0 +1,47 @@
+{
+  "run_id": "C_charcnn_random_s43",
+  "family": "C",
+  "variant": "charcnn_random",
+  "seed": 43,
+  "kind": "neural",
+  "purpose": "benchmark",
+  "config": {
+    "kind": "charcnn",
+    "embedding": "random",
+    "positional": true,
+    "weighted_loss": false,
+    "oversampling": false,
+    "max_length": 512,
+    "min_freq": 2,
+    "lr": 0.001,
+    "epochs": 15,
+    "micro_batch": 32,
+    "effective_batch": 32,
+    "patience": 3,
+    "device": "cuda",
+    "n_train": 5583,
+    "open_fasttext": false,
+    "cleaning": "conservative_v2",
+    "embedding_cache_used": false,
+    "embedding_training_seconds": 0.0
+  },
+  "offsets": [
+    0.0,
+    0.3,
+    0.0
+  ],
+  "train_seconds": 21.728914786000132,
+  "trainable_parameters": 157315,
+  "checkpoint": "models/C_charcnn_random_s43",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "data_sha256": {
+    "train": "9cf4e642bd8425e506192c161e22498e4867c7cc9814ea5bae7e2182b87c9c2b",
+    "dev": "03c4b5612080aeb7011b2d893504ccd6cd0d0aca329dd3ba34ba7defc170cd60"
+  },
+  "created_utc": "2026-11-01T18:27:34.445800+00:00",
+  "device": "cuda"
+}

@@ -1,0 +1,10 @@
+{
+  "method": "fasttext",
+  "covered": 7695,
+  "vocabulary": 7695,
+  "dimension": 128,
+  "aravec_path": "/content/Darija-Sentiment-runtime-2a5ea7aad7/models/resources/aravec/full_uni_cbow_100_twitter.mdl",
+  "fasttext_path": "/content/drive/MyDrive/Darija-Sentiment/experiments/campaign_v4/results/cache/fasttext_s42_ea7c70b3fef7a8c2.model",
+  "embedding_cache_used": true,
+  "embedding_training_seconds": 6.358645178000188
+}

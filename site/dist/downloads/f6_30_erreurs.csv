@@ -1,0 +1,31 @@
+_index,tweet,label,row_id,script,text,prediction,text_id,label_1,label_2,label_3,vote_disagreement,categorie_provisoire,validation_humaine,commentaire_humain,categorie_humaine,rang_categorie
+0,Galik lefya9 bekri bdhab mechri fine huwa dhab...,negative,ary:test:17,latin,Galik lefya9 bekri bdhab mechri fine huwa dhab...,neutral,1.546752e+18,Negative,Negative,Neutral,True,bruit_annotation_possible,à faire,,,0
+1,لا للفتنة لا للتخريب كلنا محسن فكري  https://y...,positive,ary:test:8,arabic,لا للفتنة لا للتخريب كلنا محسن فكري :( :( :( #...,neutral,,,,,,confusion_neutre_polarise,à faire,,,0
+2,@user douzi hadak ana kanhma9 3lih mais hal na...,negative,ary:test:1455,latin,douzi hadak ana kanhma9 3lih mais hal nas ghay...,positive,6.847415e+17,Negative,Negative,Negative,False,francais_possible,à faire,,,0
+3,فرنسا دولة الحق و القانون,positive,ary:test:3,arabic,فرنسا دولة الحق و القانون,negative,,,,,,ironie_ou_autre_a_examiner,à faire,,,0
+4,@user hhhhhhhhhhhh hadchi 9lil f 79houm,positive,ary:test:133,latin,hhhhhhhhhhhh hadchi 9lil f 79houm,negative,5.519035e+17,Positive,Positive,Positive,False,tokenisation_Arabizi_possible,à faire,,,0
+5,@user alrs nsiftou des msg nchej3ouha fihoum w...,neutral,ary:test:20,latin,alrs nsiftou des msg nchej3ouha fihoum w en me...,negative,6.631401e+17,Negative,Neutral,Neutral,True,bruit_annotation_possible,à faire,,,1
+6,@user bb nti makatiqich fia 💔🚬🚬,negative,ary:test:12,latin,bb nti makatiqich fia 💔🚬🚬,neutral,7.972433e+17,Negative,Negative,Negative,False,confusion_neutre_polarise,à faire,,,1
+7,#BAMA2016PlatinumEdition_IbtissamTiskat Wahed ...,negative,ary:test:1964,latin,#BAMA2016PlatinumEdition_IbtissamTiskat Wahed ...,positive,6.869587e+17,Negative,Negative,Negative,False,francais_possible,à faire,,,1
+8,في نظري الخصم دون مستوى وخير الدليل تصنيفه الد...,negative,ary:test:5,arabic,في نظري الخصم دون مستوى وخير الدليل تصنيفه الد...,positive,,,,,,ironie_ou_autre_a_examiner,à faire,,,1
+9,@user la walah yamkan enti li makantich tfarji...,negative,ary:test:204,latin,la walah yamkan enti li makantich tfarji fih m...,positive,6.949623e+17,Negative,Negative,Negative,False,tokenisation_Arabizi_possible,à faire,,,1
+10,Hahaha gatlik nostalgique 😁 Dririya tzadet apr...,negative,ary:test:23,latin,Hahaha gatlik nostalgique 😁 Dririya tzadet apr...,neutral,6.783175e+17,Negative,Negative,Positive,True,bruit_annotation_possible,à faire,,,2
+11,وزارة العدل غادي تطلق بلاطفورم رقمية لعقود الز...,neutral,ary:test:21,arabic,وزارة العدل غادي تطلق بلاطفورم رقمية لعقود الز...,negative,,,,,,confusion_neutre_polarise,à faire,,,2
+12,"سؤال سابق ﻷوانه. المغرب شرع في سياسة """" بت نبت...",positive,ary:test:7,arabic,"سؤال سابق ﻷوانه. المغرب شرع في سياسة """" بت نبت...",negative,,,,,,ironie_ou_autre_a_examiner,à faire,,,2
+13,فقط في المغرب   خمس حراس لرئيس الحكومة  وطاولة...,negative,ary:test:226,mixed,فقط في المغرب خمس حراس لرئيس الحكومة وطاولة مد...,positive,,,,,,tokenisation_Arabizi_possible,à faire,,,2
+14,@user @user tana mtaf9a m3aaak ana brassi knt ...,neutral,ary:test:41,latin,tana mtaf9a m3aaak ana brassi knt kn9ol lach h...,negative,6.057626e+17,Negative,Neutral,Neutral,True,bruit_annotation_possible,à faire,,,3
+15,@user @user 3ssbuni w93li mochkil kan9yaakl tm...,negative,ary:test:27,latin,3ssbuni w93li mochkil kan9yaakl tmak o kulchi ...,neutral,6.391735e+17,Negative,Negative,Negative,False,confusion_neutre_polarise,à faire,,,3
+16,وهل ننتظر من الداخلية التي اعطت التعليمات ان ت...,negative,ary:test:32,arabic,وهل ننتظر من الداخلية التي اعطت التعليمات ان ت...,positive,,,,,,ironie_ou_autre_a_examiner,à faire,,,3
+17,كاينين des profil جداد مجهولين كيحرضو المواطني...,positive,ary:test:330,mixed,كاينين des profil جداد مجهولين كيحرضو المواطني...,negative,,,,,,tokenisation_Arabizi_possible,à faire,,,3
+18,@user 3afak a khti khalina hna fans hanan b3ad...,negative,ary:test:50,latin,3afak a khti khalina hna fans hanan b3ad 3la h...,neutral,6.993226e+17,Negative,Negative,Positive,True,bruit_annotation_possible,à faire,,,4
+19,حي الملاح بالرباط تهمش بزاف..مواجهات ليلية بين...,neutral,ary:test:31,arabic,حي الملاح بالرباط تهمش بزاف..مواجهات ليلية بين...,negative,,,,,,confusion_neutre_polarise,à faire,,,4
+20,رحمك الله يا محسن فكري واسكن فسيح جناته,positive,ary:test:43,arabic,رحمك الله يا محسن فكري واسكن فسيح جناته,negative,,,,,,ironie_ou_autre_a_examiner,à faire,,,4
+21,@user ou had tswira li hata walah ahssan malyo...,negative,ary:test:375,latin,ou had tswira li hata walah ahssan malyou mara...,positive,7.199254e+17,Negative,Negative,Negative,False,tokenisation_Arabizi_possible,à faire,,,4
+22,@user hhhhhhhhhhhhhh maymkench ikhaliwha mn ba...,positive,ary:test:60,latin,hhhhhhhhhhhhhh maymkench ikhaliwha mn ba3d bet...,negative,5.859061e+17,Neutral,Positive,Positive,True,bruit_annotation_possible,à faire,,,5
+23,@user siri chof galt lih rani ghir kand7ak m3a...,positive,ary:test:51,latin,siri chof galt lih rani ghir kand7ak m3ak sorr...,neutral,6.834152e+17,Positive,Positive,Positive,False,confusion_neutre_polarise,à faire,,,5
+24,يا سﻻم.. على اﻹنجازات.. انجاز عظيم.. يحسب للحك...,positive,ary:test:52,arabic,يا سﻻم.. على اﻹنجازات.. انجاز عظيم.. يحسب للحك...,negative,,,,,,ironie_ou_autre_a_examiner,à faire,,,5
+25,@user ghanthalaw fiha mzyan balbayd ghir golih...,negative,ary:test:406,latin,ghanthalaw fiha mzyan balbayd ghir goliha tji ...,positive,7.091712e+17,Negative,Negative,Negative,False,tokenisation_Arabizi_possible,à faire,,,5
+26,@user @user Ou kay7wiw drari li kaydiro lbssala,negative,ary:test:61,latin,Ou kay7wiw drari li kaydiro lbssala,neutral,1.220165e+18,Negative,Negative,Indeterminate,True,bruit_annotation_possible,à faire,,,6
+27,ها كيفاش حاولو الدزايريين يتجسسو على أفراد الو...,neutral,ary:test:67,arabic,ها كيفاش حاولو الدزايريين يتجسسو على أفراد الو...,positive,,,,,,confusion_neutre_polarise,à faire,,,6
+28,نحيا و يموت الوطن #طحن-مو,positive,ary:test:77,arabic,نحيا و يموت الوطن #طحن-مو,negative,,,,,,ironie_ou_autre_a_examiner,à faire,,,6
+29,@user ghadi nekhssar 3lik ghir ya3333333333333333,negative,ary:test:600,latin,ghadi nekhssar 3lik ghir ya3333333333333333,positive,6.988197e+17,Negative,Negative,Negative,False,tokenisation_Arabizi_possible,à faire,,,6

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv*/
+.ipynb_checkpoints/
+.env
+.env.*
+.openai/
+*.log
+experiments/**/cache/
+experiments/**/resume.pt
+experiments/**/.in_progress

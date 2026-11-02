@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "base_manifest_sha256": "492f3229de392d4b58b9bfec2952b46d5d236d49977a8e213b162b21e688acaa",
+  "E2": {
+    "lambdas": [
+      0.1,
+      0.3
+    ],
+    "seeds": [
+      42
+    ],
+    "epochs": 3
+  },
+  "P": {
+    "cleanings": [
+      "without_both"
+    ],
+    "seeds": [
+      42
+    ],
+    "epochs": 3,
+    "models": [
+      "TF-IDF union",
+      "DarijaBERT"
+    ]
+  },
+  "references": {
+    "E2": "encodeur choisi sur E1, graine 42",
+    "P": [
+      "A_union_s42",
+      "E_darijabert_s42"
+    ]
+  },
+  "scope": "Réduction avant entraînement E2/P, décidée pour le temps de calcul. E1 et A-D inchangés. Comparaisons exploratoires : une graine et budget réduit ; pas d'estimation de variabilité E2/P."
+}

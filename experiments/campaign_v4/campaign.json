@@ -1,0 +1,45 @@
+{
+  "config": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "device": "cuda",
+    "max_length": 128,
+    "char_length": 512,
+    "c_epochs": 15,
+    "d_epochs": 10,
+    "e_epochs": 5,
+    "micro_batch_e": 2,
+    "c_grid_a": [
+      0.25,
+      1.0,
+      4.0
+    ],
+    "lambdas": [
+      0.1,
+      0.3,
+      0.7
+    ],
+    "include_e2": true,
+    "include_cleaning_study": true,
+    "aravec_path": "/content/Darija-Sentiment-runtime-2a5ea7aad7/models/resources/aravec/full_uni_cbow_100_twitter.mdl"
+  },
+  "cleaning": "conservative_v2",
+  "data_commit": "5aec3cfcf87b59f885e98641f72e52182776429d",
+  "code_sha256": {
+    "__init__.py": "d75444778c506de062e8cfefd29524b48127d923320e65d4834bdce198fed94b",
+    "train.py": "ffb917915c44221187541a32f2315a3139f3cfc78bbb6995740dbdabbcf9b1cc",
+    "preprocess.py": "3ea06c45770e58d587f5c3b0975fab3508bca4131eceadd9691dcd4bd79db117",
+    "campaign.py": "f71ebea23bf06c5160b976b49f94701bcc7da3e1f95a9539c164506d112149b7",
+    "models.py": "ec0568593daa982381b77ffb11d81c0814b6384eb9b3bfa2d609dc6e8490c7bc",
+    "evaluate.py": "681cde65b55b21626e48c36905bbef1801c2177a1acfb791768c5797b96534de",
+    "resources.py": "a5dd1940944e202d756eeb9681ccb62979911d654b1a3b4f533cdf1439c25c8d",
+    "smoke.py": "ed575f64c39ef451919c112983d4343028f195a7a88fd9cdb9247b689ced2a3f",
+    "ui_content.py": "38514086aeaf7ee0884e95ef40e700d14ca5a0e5fac575ef22fab21fa2fe9869",
+    "validation.py": "ece6cc8efac57e6fe25cb0aab1ec3c7fc4c5cad85d29d46261d42a299663c034",
+    "research.py": "7c3e5d9c6fe3f712dd5b6d9523c1ab36be917bb65b013e93fa7a0a240eb7583b"
+  },
+  "test_status": "test ary déjà observé lors de la campagne historique ; réévaluation exploratoire"
+}

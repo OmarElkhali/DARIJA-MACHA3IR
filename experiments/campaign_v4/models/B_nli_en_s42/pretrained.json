@@ -1,0 +1,9 @@
+{
+  "kind": "nli",
+  "language": "en",
+  "model_id": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "revision": "b5113eb38ab63efdd7f280f8c144ea8b13f978ce",
+  "local_training": false,
+  "device": "cuda",
+  "max_length": 128
+}

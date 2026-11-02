@@ -1,0 +1,36 @@
+{
+  "run_id": "A_union_C4_s42",
+  "family": "A",
+  "variant": "union_C4",
+  "seed": 42,
+  "kind": "classical",
+  "purpose": "benchmark",
+  "config": {
+    "kind": "union",
+    "train_script": null,
+    "n_train": 5583,
+    "class_weight": "balanced",
+    "C": 4.0,
+    "preserve_symbols": true,
+    "cleaning": "conservative_v2"
+  },
+  "offsets": [
+    0.0,
+    0.6,
+    0.3
+  ],
+  "train_seconds": 15.230097689000104,
+  "trainable_parameters": 335025,
+  "checkpoint": "models/A_union_C4_s42",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "data_sha256": {
+    "train": "9cf4e642bd8425e506192c161e22498e4867c7cc9814ea5bae7e2182b87c9c2b",
+    "dev": "03c4b5612080aeb7011b2d893504ccd6cd0d0aca329dd3ba34ba7defc170cd60"
+  },
+  "created_utc": "2026-11-01T18:15:18.267120+00:00",
+  "device": "cpu"
+}

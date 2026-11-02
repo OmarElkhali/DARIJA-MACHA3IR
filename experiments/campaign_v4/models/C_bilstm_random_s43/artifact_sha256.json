@@ -1,0 +1,7 @@
+{
+  "weights.pt": "531c5fa508329559f22b69d1fd95d2121f5ea6e2235efb5cdb5da869d25a89c6",
+  "vocab.json": "c5a572773c4465b05bdac5d49a27b79c2198512024228750b1fed542d7b556eb",
+  "embedding_coverage.json": "3f40927e5f9f28605f942599b915ebc9d0f8c9d5b7729b027b1832ffd79d70eb",
+  "history.csv": "dac76b3aaf2f3cf597e043fdc704babc51be3576dd27cd13db2eebc7ba0a68fd",
+  "meta.json": "ee79895a0f420e7d925a62b26c512580d4e3ddf11f66cb7d08818617d246253e"
+}

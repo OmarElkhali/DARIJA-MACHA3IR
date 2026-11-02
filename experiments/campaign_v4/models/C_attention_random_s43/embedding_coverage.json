@@ -1,0 +1,10 @@
+{
+  "method": "random",
+  "covered": 0,
+  "vocabulary": 7695,
+  "dimension": 128,
+  "aravec_path": "/content/Darija-Sentiment-runtime-2a5ea7aad7/models/resources/aravec/full_uni_cbow_100_twitter.mdl",
+  "fasttext_path": null,
+  "embedding_cache_used": false,
+  "embedding_training_seconds": 0.0
+}

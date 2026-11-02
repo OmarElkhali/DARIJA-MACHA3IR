@@ -1,0 +1,8 @@
+{
+  "data_files": 6,
+  "aravec": "/content/Darija-Sentiment-runtime-2a5ea7aad7/models/resources/aravec/full_uni_cbow_100_twitter.mdl",
+  "device": "cuda",
+  "free_disk_gib": 32.76064682006836,
+  "model_configs_checked": true,
+  "note": "Configurations accessibles ; poids complets, entraînements et mémoire de pic non vérifiés."
+}

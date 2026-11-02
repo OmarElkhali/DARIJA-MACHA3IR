@@ -1,0 +1,48 @@
+{
+  "run_id": "P_darijabert_without_both_s42",
+  "family": "P",
+  "variant": "darijabert_without_both",
+  "seed": 42,
+  "kind": "finetuned",
+  "purpose": "benchmark",
+  "config": {
+    "model_id": "SI2M-Lab/DarijaBERT",
+    "revision": "4025e5465fc6b3c9aa516839dd0bd039fa2e6d99",
+    "device": "cuda",
+    "lr": 2e-05,
+    "micro_batch": 2,
+    "effective_batch": 32,
+    "epochs": 3,
+    "min_epochs": 3,
+    "warmup_ratio": 0.1,
+    "patience": 2,
+    "max_length": 128,
+    "n_train": 5583,
+    "optimizer": "AdamW",
+    "task": "ary_only",
+    "auxiliary_weight": 0.0,
+    "weighted_loss": true,
+    "amp": true,
+    "cleaning": "without_both",
+    "setup_seconds": 17.128029925999726
+  },
+  "offsets": [
+    0.0,
+    0.0,
+    0.3
+  ],
+  "train_seconds": 1213.484309553999,
+  "trainable_parameters": 146893059,
+  "checkpoint": "models/P_darijabert_without_both_s42",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "data_sha256": {
+    "train": "9cf4e642bd8425e506192c161e22498e4867c7cc9814ea5bae7e2182b87c9c2b",
+    "dev": "03c4b5612080aeb7011b2d893504ccd6cd0d0aca329dd3ba34ba7defc170cd60"
+  },
+  "created_utc": "2026-11-01T23:43:40.678606+00:00",
+  "device": "cuda"
+}

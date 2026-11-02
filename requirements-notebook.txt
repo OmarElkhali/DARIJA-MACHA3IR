@@ -1,0 +1,16 @@
+# Python 3.10–3.13 : conserver la pile scientifique compatible du runtime.
+# Conserver PyTorch CUDA déjà installé s'il satisfait la plage.
+numpy>=1.26.4,<3
+scipy>=1.11,<2
+pandas>=2.2.3,<3
+scikit-learn>=1.6,<1.7
+torch>=2.6,<3
+transformers>=4.48,<4.49
+gensim==4.4.0
+sentencepiece>=0.2,<0.3
+protobuf>=4.25
+matplotlib>=3.7,<4
+nbformat>=5.9,<6
+psutil>=5.9
+ipython>=7.34
+packaging>=23

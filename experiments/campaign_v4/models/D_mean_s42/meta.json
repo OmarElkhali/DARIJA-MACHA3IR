@@ -1,0 +1,38 @@
+{
+  "run_id": "D_mean_s42",
+  "family": "D",
+  "variant": "mean",
+  "seed": 42,
+  "kind": "frozen",
+  "purpose": "benchmark",
+  "config": {
+    "model_id": "SI2M-Lab/DarijaBERT",
+    "revision": "4025e5465fc6b3c9aa516839dd0bd039fa2e6d99",
+    "pooling": "mean",
+    "encoder_frozen": true,
+    "max_length": 128,
+    "device": "cuda",
+    "hidden_size": 768,
+    "extraction_cache_used": false,
+    "n_train": 5583
+  },
+  "offsets": [
+    0.0,
+    0.6,
+    -0.6
+  ],
+  "train_seconds": 70.87148422500104,
+  "trainable_parameters": 2307,
+  "checkpoint": "models/D_mean_s42",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "data_sha256": {
+    "train": "9cf4e642bd8425e506192c161e22498e4867c7cc9814ea5bae7e2182b87c9c2b",
+    "dev": "03c4b5612080aeb7011b2d893504ccd6cd0d0aca329dd3ba34ba7defc170cd60"
+  },
+  "created_utc": "2026-11-01T18:40:39.262853+00:00",
+  "device": "cuda"
+}

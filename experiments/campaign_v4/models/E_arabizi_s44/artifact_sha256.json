@@ -1,0 +1,10 @@
+{
+  "weights.pt": "4d50f2f04988a4b0b6c1ebede468da2de8e418f568832f931df76c4fbf20f53a",
+  "history.csv": "7eba4d52771c2481209bbf9b78fea364b8c9fe6d8493151cc0f338a127086188",
+  "meta.json": "20dbcaa71b323d84a7d6e453a3c43eddb2dd92b09a1380943865d98b61818e26",
+  "tokenizer/tokenizer_config.json": "91e36b29a294af376609977b06baff7d4223f84e62e4f8c82681ece92e7dbda3",
+  "tokenizer/special_tokens_map.json": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+  "tokenizer/vocab.txt": "571c875722d5ed86abf9ab579233300117191f655b29cb0b22d44a9221bef797",
+  "tokenizer/tokenizer.json": "887c8af4c40e1167ded5c04ef7af01e0db855a70b22f002719d62f3bb017514a",
+  "encoder_config/config.json": "d4742bad59923bfe9667b30d9c1d685c4c051a96b41b5d2977e73167fd316f6e"
+}

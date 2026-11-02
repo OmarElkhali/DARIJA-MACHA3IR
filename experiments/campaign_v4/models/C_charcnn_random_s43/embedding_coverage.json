@@ -1,0 +1,10 @@
+{
+  "method": "random",
+  "covered": 0,
+  "vocabulary": 261,
+  "dimension": 128,
+  "aravec_path": "None",
+  "fasttext_path": null,
+  "embedding_cache_used": false,
+  "embedding_training_seconds": 0.0
+}

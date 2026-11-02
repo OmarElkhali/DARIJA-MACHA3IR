@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Une étude mesurée du sentiment en darija. Corpus AfriSenti, six méthodes, résultats de validation et test, robustesse et laboratoire de prédiction.">
+  <title>Darija / Sentiment · Étude & laboratoire</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="header">
+    <a class="brand" href="#accueil" aria-label="Darija Sentiment, accueil"><span class="brand-mark" aria-hidden="true">د</span> darija<span class="brand-slash">/</span>sentiment</a>
+    <button class="menu-toggle" aria-controls="navigation" aria-expanded="false">Menu</button>
+    <nav id="navigation" aria-label="Navigation principale">
+      <a href="#etude">L’étude</a><a href="#methodes">Méthodes</a><a href="#resultats">Résultats</a><a href="#analyses">Analyses</a><a href="#ressources">Ressources</a>
+    </nav>
+    <a class="button small primary header-lab" href="#laboratoire">Tester une phrase <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow">NLP · DARiJA MAROCAINE · AFRISENTI</p>
+        <h1>Comprendre<br>le sentiment.<br><span>En darija.</span></h1>
+        <p class="hero-description">De quelques caractères à un modèle dialectal fine-tuné. Six approches, un même corpus, et une question : que reste-t-il de la performance face à de nouveaux tweets ?</p>
+        <div class="actions"><a class="button primary" href="#resultats">Explorer les résultats <span aria-hidden="true">↘</span></a><a class="text-link" href="#etude">Comprendre le protocole</a></div>
+        <div class="hero-facts"><div><strong>9 038</strong><span>tweets marocains</span></div><div><strong>6</strong><span>familles comparées</span></div><div><strong>3</strong><span>sentiments</span></div></div>
+      </div>
+      <figure class="hero-figure">
+        <div class="figure-top"><span class="eyebrow">LA QUESTION DE LA GÉNÉRALISATION</span><span class="figure-number">FIG. 01</span></div>
+        <h2>De la validation<br>au monde du test.</h2>
+        <div class="legend"><span><i class="dot outlined"></i>Validation, moyenne des graines</span><span><i class="dot solid"></i>Test, graine 42</span></div>
+        <div id="hero-chart" class="chart" aria-live="polite"></div>
+        <figcaption>Weighted-F1 des six représentants choisis sur validation. Chaque trait relie deux mesures du même modèle ; il ne représente pas une courbe d’apprentissage.</figcaption>
+        <div class="figure-insight" id="hero-insight">Chargement des mesures de la campagne…</div>
+      </figure>
+    </section>
+
+    <section class="section study" id="etude">
+      <div class="section-heading"><p class="eyebrow">LE PROBLÈME</p><h2>Une langue.<br>Plusieurs façons de l’écrire.</h2><p>La darija traverse les alphabets. Arabizi, arabe, français et emojis peuvent coexister dans un tweet. Les mêmes sentiments prennent des formes très différentes.</p></div>
+      <div class="examples-strip" aria-label="Exemples illustratifs de graphies">
+        <article><span class="overline">ÉCRITURE ARABE</span><p lang="ar" dir="rtl">هاد الخدمة زوينة بزاف</p><small>Une opinion positive, en caractères arabes.</small></article>
+        <article><span class="overline">ÉCRITURE LATINE</span><p>had lkhadma zwina bzzaf</p><small>Une graphie possible en Arabizi.</small></article>
+        <article><span class="overline">ÉCRITURE MIXTE</span><p dir="auto">الخدمة top, merci !</p><small>Deux alphabets dans le même message.</small></article>
+      </div>
+      <p class="caption">Exemples pédagogiques construits, sans label de référence validé. Le détecteur du projet reconnaît des alphabets, pas des langues.</p>
+      <div class="two-column corpus-block">
+        <div><p class="eyebrow">LE CORPUS</p><h3>Les partitions officielles restent intactes.</h3><p>La tâche principale utilise la partition marocaine <code>ary</code> d’AfriSenti. Le corpus algérien <code>arq/train</code> intervient seulement dans l’expérience multi-tâche E2. Aucun exemple de cette page n’est ajouté à l’apprentissage.</p><a class="text-link" href="https://aclanthology.org/2023.emnlp-main.862/" target="_blank" rel="noreferrer">Lire la publication AfriSenti ↗</a></div>
+        <div><div id="corpus-chart" class="chart"></div><div class="table-wrap"><table><caption>Effectifs des fichiers officiels figés</caption><thead><tr><th>Partition</th><th>Négatif</th><th>Neutre</th><th>Positif</th><th>Total</th></tr></thead><tbody id="corpus-table"></tbody></table></div></div>
+      </div>
+      <div class="protocol"><div class="protocol-item"><span class="step-label">TRAIN</span><strong>Apprendre</strong><p>Vocabulaire, représentations, paramètres. Aucune adaptation sur validation ou test.</p></div><div class="protocol-item"><span class="step-label">VALIDATION</span><strong>Choisir</strong><p>Architecture, époque, variante et décalages de décision. Comparaison sur les graines prévues.</p></div><div class="protocol-item"><span class="step-label">VERROU</span><strong>Figer</strong><p>Candidat, représentants, graine 42 et empreintes des fichiers, avant les nouvelles mesures test.</p></div><div class="protocol-item"><span class="step-label">TEST</span><strong>Mesurer</strong><p>Qualité, écritures, robustesse, incertitude et coût. Le test ne remplace pas le candidat.</p></div></div>
+      <aside class="note"><strong>Une réévaluation exploratoire.</strong> Le test ary avait déjà été consulté dans l’étude historique. Le verrou protège les choix de cette campagne, mais ne transforme pas ce test en évaluation indépendante. Celle-ci nécessite de nouveaux textes annotés.</aside>
+      <details class="reading"><summary>Nettoyage, tokenisation et données hors vocabulaire</summary><div class="reading-grid"><article><h4>Conserver le sentiment</h4><p>Le nettoyage <code>conservative_v2</code> normalise Unicode, retire les URL et mentions et harmonise les espaces. Il conserve négation, accents, emojis, chiffres Arabizi et répétitions. P étudie un retrait conjoint des emojis et de la ponctuation.</p></article><article><h4>Des unités différentes</h4><p>TF-IDF exploite le texte complet. Les réseaux à mots et BERT sont limités à 128 tokens ; le char-CNN à 512 caractères. BERT utilise son propre tokenizer. Une longueur en mots n’est pas une longueur en sous-tokens.</p></article><article><h4>Trois notions d’OOV</h4><p>Le vocabulaire C est construit sur train, avec une fréquence minimale de 2. AraVec ne compose pas les mots absents. fastText peut composer un vecteur par sous-mots, sans apprendre de vocabulaire ni de paramètres sur validation ou test.</p></article></div></details>
+    </section>
+
+    <section class="section methods" id="methodes">
+      <div class="section-heading"><p class="eyebrow">LES APPROCHES</p><h2>Six méthodes.<br>Six manières de lire une phrase.</h2><p>Le laboratoire utilise un représentant par famille, choisi sur validation et toujours de graine 42. Les autres variantes restent visibles dans les résultats complets.</p></div>
+      <div class="method-tabs" role="tablist" aria-label="Choisir une famille de modèles" id="method-tabs"></div>
+      <div id="method-panel" role="tabpanel" tabindex="0"></div>
+      <div class="decision-block"><div><p class="eyebrow">UNE RÈGLE COMMUNE</p><h3>Apprendre les poids.<br>Puis fixer la décision.</h3></div><div><p>La sortie brute choisit la probabilité maximale. La règle de cette étude ajoute à chaque log-probabilité un décalage choisi sur validation :</p><div class="formula">ŷ = arg max<sub>c</sub> [ log p(c | x) + b<sub>c</sub> ]</div><p class="caption">Le premier décalage vaut zéro. Les deux autres sont choisis sur une grille de 25 couples. Le gain mesuré sur validation n’est pas une évaluation indépendante. La même règle est conservée sur test et dans le laboratoire.</p></div></div>
+    </section>
+
+    <section class="section results" id="resultats">
+      <div class="section-heading"><p class="eyebrow">LES MESURES</p><h2>Le résultat, avec son contexte.</h2><p>Les valeurs viennent des sorties exécutées de <code>campaign_v4</code>. Le tableau principal compare les six représentants. Le détail conserve toutes les variantes effectivement évaluées.</p></div>
+      <div class="result-callout" id="candidate-callout"></div>
+      <div class="chart-controls"><div class="segmented" aria-label="Mesure affichée"><button class="active" data-metric="weighted_f1" aria-pressed="true">Weighted-F1</button><button data-metric="macro_f1" aria-pressed="false">Macro-F1</button></div><label class="select-label">Comparer <select id="result-split"><option value="test">Test · graine 42</option><option value="dev">Validation · moyenne</option></select></label></div>
+      <div id="results-chart" class="chart results-chart"></div>
+      <div class="table-wrap"><table class="results-table"><caption>Représentants fixés sur validation. IC conditionnels au checkpoint 42.</caption><thead><tr><th>Famille / variante</th><th>F1 validation</th><th>F1 test</th><th>Macro-F1 test</th><th>IC 95 % test</th><th>Graines</th></tr></thead><tbody id="results-table"></tbody></table></div>
+      <div class="metric-definitions"><p><strong>Weighted-F1</strong> pondère le F1 de chaque classe par son effectif. C’est le critère principal déclaré.</p><p><strong>Macro-F1</strong> donne le même poids aux trois classes. Il complète le résultat global.</p><p><strong>IC bootstrap</strong> rééchantillonne les tweets 1 000 fois. Il ne mesure pas la variabilité entre entraînements.</p></div>
+      <details class="reading all-results"><summary>Toutes les variantes et leurs résultats</summary><div class="filter-row"><label>Filtrer la famille <select id="family-filter"><option value="all">Toutes</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>P</option></select></label><label>Rechercher <input id="variant-search" type="search" placeholder="attention, fastText, Arabizi…"></label><a class="text-link" href="downloads/comparison_all_variants.csv" download>Télécharger le CSV ↓</a></div><p id="variant-count" class="caption"></p><div class="table-wrap"><table><thead><tr><th>Famille</th><th>Variante</th><th>F1 val.</th><th>F1 test</th><th>Macro-F1</th><th>Moy. test</th><th>Écart-type</th><th>Graines</th></tr></thead><tbody id="variants-table"></tbody></table></div></details>
+      <aside class="note"><strong>P DarijaBERT exclu du test.</strong> Le fichier de poids de <code>P_darijabert_without_both_s42</code> est absent. Son exclusion a été demandée avant F/G et enregistrée dans le verrou. Ses scores dev sont conservés ; aucun score test ne lui est attribué. La famille P reste représentée par le TF-IDF union sans emojis ni ponctuation.</aside>
+    </section>
+
+    <section class="section analyses" id="analyses">
+      <div class="section-heading"><p class="eyebrow">AU-DELÀ D’UN SCORE</p><h2>Comprendre les écarts.</h2><p>Une moyenne ne dit pas comment un modèle réagit à une écriture, à un emoji retiré ou à un changement de distribution. Les analyses F examinent ces limites après verrouillage.</p></div>
+      <div class="analysis-tabs" role="tablist" aria-label="Analyses détaillées"><button role="tab" aria-selected="true" class="active" data-analysis="scripts">Écritures & transfert</button><button role="tab" aria-selected="false" data-analysis="robustness">Emojis & ponctuation</button><button role="tab" aria-selected="false" data-analysis="uncertainty">Incertitude & erreurs</button><button role="tab" aria-selected="false" data-analysis="cost">Qualité & coût</button></div>
+      <div id="analysis-panel" role="tabpanel"></div>
+      <details class="reading"><summary>Les courbes d’apprentissage et les figures de l’étude</summary><p>Courbes issues des historiques sauvegardés. Une courbe décrit les époques observées, pas les époques perdues avant checkpoint.</p><div id="figure-gallery" class="figure-gallery"></div></details>
+      <details class="reading"><summary>Ce que cette étude permet de conclure, et ses limites</summary><div class="reading-grid"><article><h4>Un choix sur validation</h4><p id="conclusion-candidate"></p><p>Une performance sur test ne justifie pas de changer a posteriori la variante, les décalages, la graine ou le nettoyage.</p></article><article><h4>Des diagnostics, pas des causes</h4><p>Attention, OOV, distributions et perturbations donnent des indices descriptifs. Ils ne démontrent pas à eux seuls le mécanisme d’une erreur. Retirer un emoji peut changer le sentiment véritable.</p></article><article><h4>Une validation humaine à terminer</h4><p>Les catégories d’erreurs automatiques sont des propositions. Les exemples linguistiques construits et le nouvel ensemble indépendant ne deviennent des évaluations qu’après annotation humaine documentée.</p></article><article><h4>Des comparaisons de budget limité</h4><p>E1 et C utilisent trois graines. E2 réduit compare λ=0,1 et 0,3 sur une seule graine et trois époques maximum. P est aussi limité à une graine. Aucun résultat pour λ=0,7 n’est revendiqué dans ce plan.</p></article></div></details>
+    </section>
+
+    <section class="section lab" id="laboratoire">
+      <div class="section-heading"><p class="eyebrow">LE LABORATOIRE</p><h2>Une phrase.<br>Six regards sur son sentiment.</h2><p>Écrivez en darija arabe, en Arabizi ou en français. Chaque méthode utilise son véritable checkpoint, sans réentraînement. Une phrase libre n’a pas de label de référence : les prédictions peuvent être erronées.</p></div>
+      <div class="lab-layout"><form id="prediction-form"><label class="textarea-label" for="phrase">Votre phrase</label><textarea id="phrase" dir="auto" maxlength="2000" rows="5" placeholder="Ex. had lfilm 3jebni bzzaf, vraiment zwin !" required></textarea><div class="input-meta"><span>Arabe · Arabizi · mélange</span><output id="char-count" for="phrase">0 / 2 000</output></div><div class="example-buttons" aria-label="Essayer un exemple"><button type="button" data-example="هاد الخدمة زوينة بزاف">Arabe</button><button type="button" data-example="had lfilm 3jebni bzzaf, vraiment zwin !">Arabizi</button><button type="button" data-example="ma 3jebnich hadchi, service khayb">Négation</button></div><button class="button primary predict-button" type="submit">Comparer les six méthodes <span aria-hidden="true">↗</span></button><p class="caption">La première analyse charge les modèles et peut être plus lente. Les phrases ne sont pas enregistrées par le serveur.</p><div id="engine-status" class="engine-status" role="status">Vérification du moteur d’inférence…</div><details class="connection"><summary>Connexion au moteur local</summary><label for="api-base">Adresse du serveur</label><input id="api-base" type="url" placeholder="http://127.0.0.1:8765"><button id="connect-button" type="button" class="button small secondary">Vérifier la connexion</button><p>La présentation peut être consultée seule. Pour les six prédictions, lancer le serveur livré avec le projet puis ouvrir <a href="http://127.0.0.1:8765/#laboratoire">le laboratoire local</a>.</p></details></form><div class="lab-results"><div class="lab-result-heading"><span class="eyebrow">PRÉDICTIONS DES CHECKPOINTS 42</span><span id="lab-script"></span></div><div id="predictions" aria-live="polite"></div><p class="caption">Les barres représentent des scores de décision normalisés après les décalages de validation. Ce ne sont pas des probabilités de certitude calibrées.</p><p id="prediction-summary" role="status"></p></div></div>
+    </section>
+
+    <section class="section resources" id="ressources"><div class="section-heading"><p class="eyebrow">REPRODUIRE & PRÉSENTER</p><h2>Du résultat à sa preuve.</h2><p>Le notebook réunit le code complet, les sorties observées et les conclusions de cette campagne. Les fichiers téléchargeables permettent de retrouver les mesures derrière chaque graphique.</p></div><div class="download-grid"><a class="download" href="downloads/TP2_Darija_complet_resultats.ipynb" download><span class="overline">NOTEBOOK JUPYTER</span><strong>Code complet + résultats</strong><span>Corpus, A/B/C/D/E/P, analyses F/G, sources incorporées. ↓</span></a><a class="download" href="downloads/resultats_campaign_v4.zip" download><span class="overline">ARTEFACTS MESURÉS</span><strong>Les résultats de la campagne</strong><span>CSV transcrits, figures, provenance et exclusions. ↓</span></a><a class="download" href="downloads/comparison.csv" download><span class="overline">TABLEAU PRINCIPAL</span><strong>Les six représentants</strong><span>Qualité, graines et incertitude mesurées. ↓</span></a></div><p class="caption"><a href="downloads/Darija_Sentiment_Resultats_2026.pptx" download>Télécharger la présentation PowerPoint — 31 diapositives ↓</a> · <a href="https://github.com/OmarElkhali/DARIJA-MACHA3IR">Code et livrables sur GitHub ↗</a></p><div class="references"><h3>Les références scientifiques</h3><a href="https://aclanthology.org/2023.emnlp-main.862/" target="_blank" rel="noreferrer"><strong>AfriSenti</strong><span>Le benchmark et ses partitions africaines. Muhammad et al., 2023.</span><b aria-hidden="true">↗</b></a><a href="https://aclanthology.org/2023.semeval-1.315/" target="_blank" rel="noreferrer"><strong>AfriSenti-SemEval</strong><span>Le protocole de la tâche partagée et le Weighted-F1.</span><b aria-hidden="true">↗</b></a><a href="https://link.springer.com/article/10.1007/s41060-023-00498-2" target="_blank" rel="noreferrer"><strong>DarijaBERT</strong><span>Modèles préentraînés pour la darija écrite. Gaanoun et al.</span><b aria-hidden="true">↗</b></a><a href="https://aclanthology.org/Q17-1010/" target="_blank" rel="noreferrer"><strong>fastText</strong><span>Représentations de mots par sous-mots. Bojanowski et al., 2017.</span><b aria-hidden="true">↗</b></a></div><details class="reading"><summary>Préparer l’oral : douze questions, leurs mesures et leurs limites</summary><div id="oral-questions" class="oral-questions"></div></details></section>
+  </main>
+  <footer><a class="brand" href="#accueil">darija<span class="brand-slash">/</span>sentiment</a><p>Une étude exploratoire du sentiment marocain.<br>Les mesures décrivent cette campagne et son matériel.</p><a href="#accueil" class="text-link">Revenir en haut ↑</a></footer>
+  <dialog id="figure-dialog"><button class="dialog-close button small secondary" autofocus>Fermer ×</button><img alt=""><p></p></dialog>
+  <div id="global-error" role="alert" hidden></div>
+</body>
+</html>

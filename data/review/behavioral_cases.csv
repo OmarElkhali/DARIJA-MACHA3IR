@@ -1,0 +1,13 @@
+case_id,pair_id,category,text,label,suggested_label,reviewer,validation_humaine,source,collected_at
+neg_1,neg,negation,هاد الفيلم عجبني,,positive,,à faire,exemple construit à valider,
+neg_2,neg,negation,هاد الفيلم ما عجبنيش,,negative,,à faire,exemple construit à valider,
+script_1,script,arabizi,هاد الخدمة زوينة,,positive,,à faire,exemple construit à valider,
+script_2,script,arabizi,had lkhedma zwina,,positive,,à faire,exemple construit à valider,
+mix_1,mix,code_switching,Service خايب بزاف,,negative,,à faire,exemple construit à valider,
+mix_2,mix,code_switching,Le service ما عجبنيش,,negative,,à faire,exemple construit à valider,
+spell_1,spell,orthographe,زوين بزاف,,positive,,à faire,exemple construit à valider,
+spell_2,spell,orthographe,زوييييين بزاف!!!,,positive,,à faire,exemple construit à valider,
+irony_1,irony,ironie,شكرا على التأخير ديال جوج سوايع 🙄,,,,à faire,exemple ambigu à annoter,
+irony_2,irony,ironie,خدمة رائعة تسنيت غير ثلاثة سوايع 🙃,,,,à faire,exemple ambigu à annoter,
+neutral_1,neutral,neutre,الفيلم كيبدا مع الثمانية,,neutral,,à faire,exemple construit à valider,
+mixed_1,mixed,sentiments_mixtes,الماكلة زوينة ولكن الخدمة خايبة,,,,à faire,exemple ambigu à annoter,

@@ -1,0 +1,154 @@
+{
+  "engine": {
+    "status": "partial",
+    "engine": "PyTorch CPU",
+    "families": {
+      "E": "E_arabizi_s42",
+      "A": "A_char_s42",
+      "C": "C_bilstm_aravec_s42",
+      "D": "D_states_s42",
+      "P": "P_union_without_both_s42",
+      "B": "B_camelbert_s42"
+    },
+    "available_families": [
+      "A",
+      "C",
+      "D",
+      "P",
+      "B"
+    ],
+    "trained_models": 5,
+    "stores_phrases": false
+  },
+  "prediction": {
+    "text": "had lfilm 3jebni bzzaf",
+    "cleaned_text": "had lfilm 3jebni bzzaf",
+    "script": "latin",
+    "results": [
+      {
+        "family": "A",
+        "run_id": "A_char_s42",
+        "sentiment": "positive",
+        "probabilities": {
+          "negative": 0.29139683610346007,
+          "neutral": 0.29089122222269087,
+          "positive": 0.41771194167384906
+        },
+        "decision_scores": {
+          "negative": 0.2644804357269429,
+          "neutral": 0.3563917816260884,
+          "positive": 0.37912778264696867
+        },
+        "offsets": [
+          0.0,
+          0.3,
+          0.0
+        ],
+        "milliseconds": 11.4,
+        "status": "ok"
+      },
+      {
+        "family": "B",
+        "run_id": "B_camelbert_s42",
+        "sentiment": "neutral",
+        "probabilities": {
+          "negative": 0.03380834683775902,
+          "neutral": 0.8076542615890503,
+          "positive": 0.1585373878479004
+        },
+        "decision_scores": {
+          "negative": 0.01966226351150865,
+          "neutral": 0.8558777871566875,
+          "positive": 0.12445994933180393
+        },
+        "offsets": [
+          0.0,
+          0.6,
+          0.3
+        ],
+        "milliseconds": 181.4,
+        "status": "ok"
+      },
+      {
+        "family": "C",
+        "run_id": "C_bilstm_aravec_s42",
+        "sentiment": "neutral",
+        "probabilities": {
+          "negative": 0.15603512525558472,
+          "neutral": 0.6375817656517029,
+          "positive": 0.20638307929039001
+        },
+        "decision_scores": {
+          "negative": 0.12046546697868037,
+          "neutral": 0.6644532457437318,
+          "positive": 0.21508128727758782
+        },
+        "offsets": [
+          0.0,
+          0.3,
+          0.3
+        ],
+        "milliseconds": 8.2,
+        "status": "ok"
+      },
+      {
+        "family": "D",
+        "run_id": "D_states_s42",
+        "sentiment": "neutral",
+        "probabilities": {
+          "negative": 0.12057465314865112,
+          "neutral": 0.63164222240448,
+          "positive": 0.24778307974338531
+        },
+        "decision_scores": {
+          "negative": 0.13063641439776552,
+          "neutral": 0.5069802471638529,
+          "positive": 0.3623833384383815
+        },
+        "offsets": [
+          0.0,
+          -0.3,
+          0.3
+        ],
+        "milliseconds": 222.9,
+        "status": "ok"
+      },
+      {
+        "family": "E",
+        "run_id": "E_arabizi_s42",
+        "status": "error",
+        "error": "Modèle indisponible. Vérifier les poids et le cache des encodeurs dans le serveur local."
+      },
+      {
+        "family": "P",
+        "run_id": "P_union_without_both_s42",
+        "sentiment": "neutral",
+        "probabilities": {
+          "negative": 0.2363411296728904,
+          "neutral": 0.3347772205248777,
+          "positive": 0.4288816498022318
+        },
+        "decision_scores": {
+          "negative": 0.2115619833250531,
+          "neutral": 0.4045223919613666,
+          "positive": 0.3839156247135804
+        },
+        "offsets": [
+          0.0,
+          0.3,
+          0.0
+        ],
+        "milliseconds": 12.1,
+        "status": "ok"
+      }
+    ],
+    "score_note": "Scores de décision normalisés, non calibrés. Décalages fixés sur validation."
+  },
+  "browser": {
+    "desktop": true,
+    "mobile": true,
+    "js_errors": [],
+    "real_predictions": 5,
+    "missing_weight": "E_arabizi_s42"
+  }
+}

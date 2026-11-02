@@ -1,0 +1,50 @@
+{
+  "run_id": "E_arabizi_s44",
+  "family": "E",
+  "variant": "arabizi",
+  "seed": 44,
+  "kind": "finetuned",
+  "purpose": "benchmark",
+  "config": {
+    "model_id": "SI2M-Lab/DarijaBERT-arabizi",
+    "revision": "399963e234e368ed8428f32bf040e4a6e03c819c",
+    "device": "cuda",
+    "lr": 2e-05,
+    "micro_batch": 2,
+    "effective_batch": 32,
+    "epochs": 5,
+    "min_epochs": 3,
+    "warmup_ratio": 0.1,
+    "patience": 2,
+    "max_length": 128,
+    "n_train": 5583,
+    "optimizer": "AdamW",
+    "task": "ary_only",
+    "auxiliary_weight": 0.0,
+    "weighted_loss": true,
+    "amp": true,
+    "cleaning": "conservative_v2",
+    "setup_seconds": 35.450920402000065,
+    "resumed_epochs": 1,
+    "resumed_epoch_seconds": 293.8522667620018
+  },
+  "offsets": [
+    0.0,
+    0.3,
+    0.3
+  ],
+  "train_seconds": 1592.4151426780018,
+  "trainable_parameters": 169933059,
+  "checkpoint": "models/E_arabizi_s44",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "data_sha256": {
+    "train": "9cf4e642bd8425e506192c161e22498e4867c7cc9814ea5bae7e2182b87c9c2b",
+    "dev": "03c4b5612080aeb7011b2d893504ccd6cd0d0aca329dd3ba34ba7defc170cd60"
+  },
+  "created_utc": "2026-11-01T22:19:46.114231+00:00",
+  "device": "cuda"
+}
