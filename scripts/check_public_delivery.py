@@ -24,12 +24,12 @@ for index, cell in enumerate(notebook.cells):
         assert cell.execution_count is None
         ast.parse(cell.source, filename=f'cell_{index}')
         assert not any(output.output_type == 'error' for output in cell.outputs)
-deck = PROJECT/'presentation/Resultats_2026/Darija_Sentiment_Resultats_2026.pptx'
+deck = PROJECT/'presentation/Darija_Soutenance_38_Slides_QR/Darija_Soutenance_38_Slides_QR_Finale.pptx'
 with zipfile.ZipFile(deck) as archive:
     slides = [name for name in archive.namelist() if re.fullmatch(r'ppt/slides/slide\d+\.xml',name)]
-    assert len(slides) == 31
+    assert len(slides) == 38
 data = json.loads((PROJECT/'site/dist/data.json').read_text(encoding='utf-8'))
 assert len(data['comparison']) == 6 and len(data['variants']) == 33
 assert data['meta']['candidate_run'] == 'E_arabizi_s42'
 assert next(row for row in data['comparison'] if row['family']=='E')['weighted_f1'] == 0.608138
-print(f'Publication vérifiée : {len(notebook.cells)} cellules, 31 diapositives, six familles, 33 variantes ; aucun motif de secret détecté.')
+print(f'Publication vérifiée : {len(notebook.cells)} cellules, 38 diapositives, six familles, 33 variantes ; aucun motif de secret détecté.')

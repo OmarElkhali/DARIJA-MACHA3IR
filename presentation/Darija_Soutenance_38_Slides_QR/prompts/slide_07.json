@@ -1,0 +1,43 @@
+{
+  "slide": 7,
+  "title": "A — Résultats et temps d’entraînement",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"French\",\n  \"slide_number\": 7,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nDévelopper la soutenance avec des schémas riches dans le style original, des temps mesurés et une comparaison scientifique prudente.\n\n## Required Background\n{\n  \"deck_context\": {\n    \"source_summary\": \"AfriSenti ary : train5583, validation494, test2961. Six familles A/B/C/D/E/P, 33 variantes, 71 évaluations finales. E1 exécuté ; E2 réduit λ0.1/0.3 exécuté. P DarijaBERT exclu du test.\",\n    \"core_claim\": \"E Arabizi est choisi sur validation (moyenne .811256) ; représentant42 test weightedF1 .608138, macro .600620. Étude exploratoire, test historiquement consulté. Le laboratoire possède cinq checkpoints, pas E.\",\n    \"canonical_terms\": [\n      \"ary : tâche principale\",\n      \"arq : auxiliaire E2 seulement\",\n      \"Weighted-F1 ≠ accuracy\",\n      \"IC conditionnel au checkpoint\",\n      \"Aucune exécution de notebook pour ce livrable\"\n    ]\n  }\n}\n\n## Global Style\n{\n  \"name\": \"Éditorial classique ivoire et forêt\",\n  \"visual_direction\": \"Match the attached original and sample: ivory paper, forest green large serif, sage and terracotta, richly illustrated technical diagrams, explanatory density, no minimalist dashboard. Every slide is complete including readable French text.\",\n  \"color_palette\": \"ivory #F6F3EC, forest #173D36, sage #91A58C, muted terracotta #B66D60, fine warm-grey rules\",\n  \"typography\": \"large Georgia-like serif titles and clean Segoe-like humanist sans labels; French accents correct, Arabic right-to-left correctly shaped; body at least ~26px in a1920x1080 canvas\",\n  \"texture_and_finish\": \"flat refined paper, no gradients, no shadows, no fake UI panels\",\n  \"deck_consistency\": \"Match approved sample palette, typography mood, restraint and density. Vary composition by role. Do not copy sample chart into other slides.\"\n}\n\n## Input Images\n\n- Image 1: C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png — style only: approved comparison sample; do not copy layout or content\n- Image 2: C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png — original style reference only\n\n\n## Slide\n{\n  \"number\": 7,\n  \"title\": \"A — Résultats et temps d’entraînement\",\n  \"role\": \"scientific evidence and illustrated explanation\",\n  \"intent\": \"Explain mechanism, measured evidence and practical limitation.\"\n}\n\n## Text\n{\n  \"title\": \"A — Résultats et temps d’entraînement\",\n  \"key_points\": [\n    \"TF-IDF mots : 1,79 s. Caractères : 8,39 s. Union : 9,06 s, graine 42.\",\n    \"A caractères : F1 test 0,553509. Huit runs A : 49,15 s cumulées.\",\n    \"Visuel : mécanisme TF-IDF, cartes de fragments et chronomètre, avec les valeurs intégrées dans la page.\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\n{\n  \"composition\": \"Mechanism strips words/characters/union with fragment tokens, tiny vectors and stopwatches; lower clear evidence panel.\"\n}\n\n## Constraints\n[\n  \"Complete 16:9 final slide image, all French text and data included.\",\n  \"Use exact supplied facts; do not fabricate scores, timings, claims, curves, or future improvements.\",\n  \"Preserve serif forest/ivory/sage/terracotta original identity, rich explanatory illustrations and readable type.\",\n  \"No page number, no unrelated landscapes or watermarks.\"\n]\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render Chinese text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_07.png",
+  "input_images": [
+    {
+      "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+      "role": "style only: approved comparison sample; do not copy layout or content"
+    },
+    {
+      "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+      "role": "original style reference only"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen__imagegen",
+    "mode": "generate with referenced local images",
+    "model_configuration": "built-in defaults; exact model, quality and size not exposed",
+    "approved_sample_path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+    "input_context_preparation": "Inspect local references with view_image before generation. Attach all job input_images as referenced_image_paths. Style images style-only; required curves strict unchanged.",
+    "approval": "User explicitly approved plan and full production without further confirmation on 2026-11-02; sample visually checked by parent."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

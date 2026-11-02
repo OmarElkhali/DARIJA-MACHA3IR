@@ -1,0 +1,54 @@
+{
+  "metric": "test weighted F1 (%)",
+  "dataset": "AfriSenti Moroccan Arabic / Darija, monolingual Task A",
+  "rows": [
+    {
+      "system": "NLNDE",
+      "authors": "Wang et al.",
+      "year": 2023,
+      "score": 64.82,
+      "url": "https://aclanthology.org/2023.semeval-1.68.pdf",
+      "pdf_page": 4,
+      "table": 2,
+      "column": "ma",
+      "method": "AfroXLM-R large, adaptive pretraining, ensemble of random seeds"
+    },
+    {
+      "system": "ABCD",
+      "authors": "Thin et al.",
+      "year": 2023,
+      "score": 61.54,
+      "url": "https://aclanthology.org/2023.semeval-1.44.pdf",
+      "pdf_page": 4,
+      "table": 1,
+      "column": "Track 7: Moroccan",
+      "method": "Soft-voting ensemble of AfroXLMR, AfriBERTa and LaBSE"
+    },
+    {
+      "system": "UM6P",
+      "authors": "El Mahdaouy et al.",
+      "year": 2023,
+      "score": 60.15,
+      "url": "https://aclanthology.org/2023.semeval-1.138.pdf",
+      "pdf_page": 5,
+      "table": 4,
+      "column": "ma",
+      "method": "AfroXLM and MARBERT combination with a residual layer"
+    },
+    {
+      "system": "Our E",
+      "score_exact": 60.8138,
+      "score_display": 60.81,
+      "local_source": "site/dist/data.json",
+      "seed": 42
+    }
+  ],
+  "caveats": [
+    "Same benchmark family does not establish an identical data revision or evaluation pipeline.",
+    "Local validation: 494 records. Overview table 1 announces 1216.",
+    "Project test was historically consulted: exploratory campaign.",
+    "Published submissions may aggregate random seeds, while the project representative uses seed 42.",
+    "NLNDE paper 64.82 differs from overview official table 64.83 by 0.01 point.",
+    "The EMNLP AfriSenti baseline table is labelled Accuracy, so it is not mixed into this weighted-F1 comparison."
+  ]
+}

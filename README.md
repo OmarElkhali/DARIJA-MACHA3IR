@@ -2,7 +2,7 @@
 
 Analyse du sentiment en darija marocaine : six familles de méthodes, leurs résultats mesurés et leurs limites. Travail sur les partitions officielles `ary` d’AfriSenti : **5 583 tweets train, 494 validation, 2 961 test**.
 
-**[Ouvrir le site](https://omarelkhali.github.io/DARIJA-MACHA3IR/)** · **[Lire le notebook en HTML](https://omarelkhali.github.io/DARIJA-MACHA3IR/downloads/TP2_Darija_complet_resultats.html)** · **[Télécharger le notebook final](notebooks/TP2_Darija_complet_resultats.ipynb)** · **[Soutenance illustrée — 26 diapositives](presentation/Darija_Sentiment_Soutenance_Resultats/Darija_Sentiment_Soutenance_Resultats.pptx)** · [Notes pour l’oral](presentation/Darija_Sentiment_Soutenance_Resultats/speech.md)
+**[Ouvrir le site](https://omarelkhali.github.io/DARIJA-MACHA3IR/)** · **[Lire le notebook en HTML](https://omarelkhali.github.io/DARIJA-MACHA3IR/downloads/TP2_Darija_complet_resultats.html)** · **[Télécharger le notebook final](notebooks/TP2_Darija_complet_resultats.ipynb)** · **[Soutenance illustrée — 38 diapositives](presentation/Darija_Soutenance_38_Slides_QR/Darija_Soutenance_38_Slides_QR_Finale.pptx)** · [Notes pour l’oral](presentation/Darija_Soutenance_38_Slides_QR/speech.md)
 
 ## Résultats de la campagne
 
@@ -71,9 +71,9 @@ Ouvrir **http://127.0.0.1:8765**, puis écrire une phrase. Les poids sélectionn
 - `experiments/campaign_v4/` : paramètres, métadonnées, historiques, résultats et checkpoints disponibles. Les binaires sont suivis avec Git LFS ; les caches et états temporaires de reprise sont exclus.
 - `research/notebook_tables_snapshot.json` : tableaux extraits avec cellule et sortie d’origine ; `research/notebook_figures/` : figures enregistrées.
 - `site/dist/downloads/` : tableaux CSV, notebook et archive de résultats transcrits. Cette archive ne prétend pas remplacer les CSV bruts masqués par l’affichage tronqué.
-- `presentation/Darija_Sentiment_Soutenance_Resultats/` : nouvelle soutenance en 26 pages-images, générée dans le style de la soutenance originale, notes françaises intégrées et traçabilité codex-ppt. Les images ont été inspectées ; aucune inspection native PowerPoint n’est revendiquée. La version éditable antérieure reste archivée dans `presentation/Resultats_2026/`.
+- `presentation/Darija_Soutenance_38_Slides_QR/` : soutenance finale en 38 pages, notes intégrées, comparaison scientifique et 12 questions-réponses avec renvois. Anciennes versions supprimées.
 
-Validation effectuée : structure et compilation des cellules du notebook sans exécution, export HTML, 26 nouvelles diapositives illustrées inspectées, provenance de génération et notes intégrées vérifiées, graphiques issus des mesures, navigation/filtres et affichage mobile du site, absence d’erreur JavaScript, validation des requêtes de l’API et cinq prédictions réelles. Rapport : `research/web_delivery_checks.json`. Le script `scripts/check_web_delivery.py` utilise Playwright en mode headless ; il ne contrôle pas le bureau de l’utilisateur.
+Validation effectuée : structure et compilation des cellules du notebook sans exécution, export HTML, 38 diapositives illustrées inspectées, provenance de génération et notes intégrées vérifiées, graphiques issus des mesures, navigation/filtres et affichage mobile du site, absence d’erreur JavaScript, validation des requêtes de l’API et cinq prédictions réelles. Rapport : `research/web_delivery_checks.json`. Le script `scripts/check_web_delivery.py` utilise Playwright en mode headless ; il ne contrôle pas le bureau de l’utilisateur.
 
 ## Références
 

@@ -1,0 +1,1086 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "Darija_Soutenance_Illustree_Comparee",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen__imagegen",
+    "mode": "generate with referenced local images",
+    "model_configuration": "built-in defaults; exact model, quality and size not exposed",
+    "approved_sample_path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+    "input_context_preparation": "Inspect local references with view_image before generation. Attach all job input_images as referenced_image_paths. Style images style-only; required curves strict unchanged.",
+    "approval": "User explicitly approved plan and full production without further confirmation on 2026-11-02; sample visually checked by parent."
+  },
+  "max_concurrent_slides": 3,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "Analyse de sentiment en darija marocaine",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_01.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Une langue, plusieurs graphies",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_02.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Train apprend, validation choisit, test mesure",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_03.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Lire les distributions avant les scores",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\site\\dist\\figures\\F1_distributions.png",
+          "role": "strict input asset, figure de la campagne actuelle",
+          "fidelity": "Preserve actual data, axes, labels, traces, legend and values; embed unchanged, never synthesize a similar graph."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_04.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "L’écriture peut devenir un raccourci",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_05.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "A — Comprendre TF-IDF et les caractères",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_06.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "A — Résultats et temps d’entraînement",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide07",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "a78d74749de5d70d80129b5d0564239b474455f95af1c8b6cf08a7b9ba91cb21",
+        "dispatched_at": "2026-11-02T11:36:22Z"
+      },
+      "result": {
+        "agent_id": "/root/slide07",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\.codex\\generated_images\\01a19c0a-e21f-7cf3-8870-f9b41883e00e\\exec-53daa481-2ac1-4823-a0bf-f20a69246567.png",
+        "selected_source_sha256": "3ce5558de5e2542633e3a751e57573bd90838294b7498a2034d10adbdfc34f29",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "3ce5558de5e2542633e3a751e57573bd90838294b7498a2034d10adbdfc34f29",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually checked style, measured data, legibility and retained figure content; backend image edit introduces raster variations.",
+        "recorded_at": "2026-11-02T11:40:34Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "B1 — Reformuler le sentiment comme une hypothèse",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_08.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "B — Transfert fixe et coût local",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide09",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "058594e68771971817b940894ab5eacbaba0e04d68760df29de91c9aecda0439",
+        "dispatched_at": "2026-11-02T11:36:23Z"
+      },
+      "result": {
+        "agent_id": "/root/slide09",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\.codex\\generated_images\\01a19c0b-65f1-75e1-81f5-c5b9d6c7b271\\exec-ea2448bf-1a73-4f48-8e04-ffea25e4e57b.png",
+        "selected_source_sha256": "72d892bedf4c6147ad7d0a9a0d532a1bc76005ea2942db55df82878e981f436d",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "72d892bedf4c6147ad7d0a9a0d532a1bc76005ea2942db55df82878e981f436d",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Factual label repaired: Arabic sentiment model. Inference cost language corrected. Numeric data unchanged.",
+        "recorded_at": "2026-11-02T12:11:50Z"
+      },
+      "blocker": null,
+      "result_history": [
+        {
+          "agent_id": "/root/slide09",
+          "backend_used": "built-in image tool",
+          "selected_source": "C:\\Users\\omare\\.codex\\generated_images\\01a19c0b-65f1-75e1-81f5-c5b9d6c7b271\\exec-90d21943-1e60-4b96-821c-16247e4330fa.png",
+          "selected_source_sha256": "fb954663eb30627e6c8d84ca841e55c7239148cefbabc5447f13fb08d45ff1dc",
+          "final_image": "origin_image/slide_09.png",
+          "final_image_sha256": "fb954663eb30627e6c8d84ca841e55c7239148cefbabc5447f13fb08d45ff1dc",
+          "expected_backend": "built-in image tool",
+          "expected_backend_labels": [
+            "built-in image tool",
+            "image_gen__imagegen"
+          ],
+          "sample_generation_method_matched": true,
+          "qa_note": "Verified exact scores, timing scope and original illustrated identity.",
+          "recorded_at": "2026-11-02T11:38:52Z"
+        }
+      ],
+      "repair_evidence": "repairs/slide09/slide_jobs.json"
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Déséquilibre : agir sur l’apprentissage et la décision",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_10.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "C — Des embeddings à la décision",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_11.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "C — Apprentissage, résultats et durée",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\site\\dist\\figures\\curves_C.png",
+          "role": "strict unchanged actual learning curves",
+          "fidelity": "preserve all data traces, axes, ticks, labels and legend exactly; include the original figure, do not redraw"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide12",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "f9679cb2c7c75f4bb1ac5dec408afb846e5daab9650065ce65ffcc9735c712be",
+        "dispatched_at": "2026-11-02T11:36:24Z"
+      },
+      "result": {
+        "agent_id": "/root/slide12",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\.codex\\generated_images\\01a19c0b-a898-78d0-8be4-2deb0a6d07ac\\exec-92edb773-b25e-4bdb-bc8e-b6488d3810ec.png",
+        "selected_source_sha256": "d7364039f4eaac8afb8914995a9fc7c1afdb142ca5a4724a7eff5b83359a5263",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "d7364039f4eaac8afb8914995a9fc7c1afdb142ca5a4724a7eff5b83359a5263",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually checked style, measured data, legibility and retained figure content; backend image edit introduces raster variations.",
+        "recorded_at": "2026-11-02T11:40:35Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "D — DarijaBERT comme encodeur gelé",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide13",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "86b5e6db515259149a30efd2e2dba5ba0a9cabe8e6b46029adac9ff6c16e314d",
+        "dispatched_at": "2026-11-02T11:44:00Z"
+      },
+      "result": {
+        "agent_id": "/root/slide13",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\.codex\\generated_images\\01a19c10-961d-7883-8436-2361667a38f7\\exec-3c7970cc-1973-4097-8c59-a79a1819af5b.png",
+        "selected_source_sha256": "b69e45ee59fbfcfb952e12da9e1cbc6c248e94f54a9b312207f800103af9396d",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "b69e45ee59fbfcfb952e12da9e1cbc6c248e94f54a9b312207f800103af9396d",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Verified architecture, parameters, labels, palette and readable scientific composition.",
+        "recorded_at": "2026-11-02T11:48:18Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "D — Résultats et durée de calcul",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide14",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "757f5d11f6b5a245c5780eb2ebd4a614e64bab5ef3f7c0202857547abd3da877",
+        "dispatched_at": "2026-11-02T11:44:01Z"
+      },
+      "result": {
+        "agent_id": "/root/slide14",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\.codex\\generated_images\\01a19c10-f7d1-7fe1-a3ab-d63f4a2caa3d\\exec-d03e3ea5-7839-420a-a73f-067c8f996f02.png",
+        "selected_source_sha256": "80d7dd62475b801a0639c9da21255c8605d470b6642e5a726ff1545136cc44c8",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "80d7dd62475b801a0639c9da21255c8605d470b6642e5a726ff1545136cc44c8",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "DarijaBERT label corrected; data, timing scope and style checked.",
+        "recorded_at": "2026-11-02T11:52:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_15",
+      "number": 15,
+      "title": "E — Ajuster DarijaBERT sur le sentiment",
+      "job": "prompts/slide_15.json",
+      "out": "origin_image/slide_15.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide15",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_15.json",
+        "prompt_sha256": "1767c1f3d1acedc4cbe4d86f4e6e5432b5ef51bd4146d547ff5f808a0d2d2c31",
+        "dispatched_at": "2026-11-02T11:44:02Z"
+      },
+      "result": {
+        "agent_id": "/root/slide15",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\.codex\\generated_images\\01a19c11-9c79-7782-8b49-bf1321a9bb3b\\exec-286e514a-1082-46ee-ad88-06de0dbec06b.png",
+        "selected_source_sha256": "26c24a0054693cf350a2a13c99e551054b14252e7be399d61bfcd9988f1facd1",
+        "final_image": "origin_image/slide_15.png",
+        "final_image_sha256": "26c24a0054693cf350a2a13c99e551054b14252e7be399d61bfcd9988f1facd1",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Verified architecture, parameters, labels, palette and readable scientific composition.",
+        "recorded_at": "2026-11-02T11:48:19Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_16",
+      "number": 16,
+      "title": "E — Le fine-tuning concentre le temps",
+      "job": "prompts/slide_16.json",
+      "out": "origin_image/slide_16.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide16",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_16.json",
+        "prompt_sha256": "7261be9d14e1009cad03bb38a7822bb8d7b344dc9c13802aca8040cfef884c66",
+        "dispatched_at": "2026-11-02T11:52:14Z"
+      },
+      "result": {
+        "agent_id": "/root/slide16",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\generated_candidates\\slide_16_candidate.png",
+        "selected_source_sha256": "459c20bdd8752bd36afe87ba7cf98ec911dc4b0273e2ff7f6376cdf238ce3b43",
+        "final_image": "origin_image/slide_16.png",
+        "final_image_sha256": "459c20bdd8752bd36afe87ba7cf98ec911dc4b0273e2ff7f6376cdf238ce3b43",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually verified complete French text, exact measured data and future/observed distinction.",
+        "recorded_at": "2026-11-02T11:54:55Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_17",
+      "number": 17,
+      "title": "E2 — Une tâche auxiliaire ne garantit pas un gain",
+      "job": "prompts/slide_17.json",
+      "out": "origin_image/slide_17.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_17.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_18",
+      "number": 18,
+      "title": "E2 — Budget réduit et suite souhaitée",
+      "job": "prompts/slide_18.json",
+      "out": "origin_image/slide_18.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide18",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_18.json",
+        "prompt_sha256": "579a8c9e52e12bac77d4295be563f7c2cc7c03c743a3a979012190608455a5d7",
+        "dispatched_at": "2026-11-02T11:52:15Z"
+      },
+      "result": {
+        "agent_id": "/root/slide18",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\.codex\\generated_images\\01a19c18-395f-7702-9309-ebb636658e48\\exec-bb6f1c8b-c9e3-453e-b464-c3929d4ef6ce.png",
+        "selected_source_sha256": "5787f84fe8b79b2d2539ebc7877d4e9ad02c1948d2c7c0a46cd12cef5f49742f",
+        "final_image": "origin_image/slide_18.png",
+        "final_image_sha256": "5787f84fe8b79b2d2539ebc7877d4e9ad02c1948d2c7c0a46cd12cef5f49742f",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually verified complete French text, exact measured data and future/observed distinction.",
+        "recorded_at": "2026-11-02T11:54:56Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_19",
+      "number": 19,
+      "title": "Nettoyer sans effacer les indices : expérience P",
+      "job": "prompts/slide_19.json",
+      "out": "origin_image/slide_19.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_19.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_20",
+      "number": 20,
+      "title": "P — Temps mesurés et étude incomplète",
+      "job": "prompts/slide_20.json",
+      "out": "origin_image/slide_20.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide20",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_20.json",
+        "prompt_sha256": "480f8a807cbdb50eff377a74b9fc3e4c8dc7484740f8bee27c30841d78b1e858",
+        "dispatched_at": "2026-11-02T11:52:16Z"
+      },
+      "result": {
+        "agent_id": "/root/slide20",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\generated_candidates\\slide_20_generated.png",
+        "selected_source_sha256": "ce23b779046ee219d6faee911e5b200fa993d60a897ec6501abfdf8cd33f2ce0",
+        "final_image": "origin_image/slide_20.png",
+        "final_image_sha256": "ce23b779046ee219d6faee911e5b200fa993d60a897ec6501abfdf8cd33f2ce0",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually verified complete French text, exact measured data and future/observed distinction.",
+        "recorded_at": "2026-11-02T11:54:57Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_21",
+      "number": 21,
+      "title": "La sélection se fait avant la comparaison finale",
+      "job": "prompts/slide_21.json",
+      "out": "origin_image/slide_21.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_21.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_22",
+      "number": 22,
+      "title": "Résultats sur le test officiel",
+      "job": "prompts/slide_22.json",
+      "out": "origin_image/slide_22.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_22.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_23",
+      "number": 23,
+      "title": "Nos résultats face aux publications sur AfriSenti–ary",
+      "job": "prompts/slide_23.json",
+      "out": "origin_image/slide_23.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_23.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_24",
+      "number": 24,
+      "title": "Lire les erreurs du candidat, classe par classe",
+      "job": "prompts/slide_24.json",
+      "out": "origin_image/slide_24.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\site\\dist\\figures\\modele_final.png",
+          "role": "strict input asset, figure de la campagne actuelle",
+          "fidelity": "Preserve actual data, axes, labels, traces, legend and values; embed unchanged, never synthesize a similar graph."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_24.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_25",
+      "number": 25,
+      "title": "Validation → test : une baisse à expliquer",
+      "job": "prompts/slide_25.json",
+      "out": "origin_image/slide_25.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_25.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_26",
+      "number": 26,
+      "title": "Écriture non vue : le transfert reste difficile",
+      "job": "prompts/slide_26.json",
+      "out": "origin_image/slide_26.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_26.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_27",
+      "number": 27,
+      "title": "Incertitude : situer le score, pas seulement le classer",
+      "job": "prompts/slide_27.json",
+      "out": "origin_image/slide_27.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_27.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_28",
+      "number": 28,
+      "title": "G — Qualité, latence CPU et taille des poids",
+      "job": "prompts/slide_28.json",
+      "out": "origin_image/slide_28.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\site\\dist\\figures\\G_quality_cost.png",
+          "role": "strict input asset, figure de la campagne actuelle",
+          "fidelity": "Preserve actual data, axes, labels, traces, legend and values; embed unchanged, never synthesize a similar graph."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_28.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_29",
+      "number": 29,
+      "title": "Temps enregistrés par famille",
+      "job": "prompts/slide_29.json",
+      "out": "origin_image/slide_29.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide29",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_29.json",
+        "prompt_sha256": "19f730c7e6262531c6a1cacfbfd340afede63c564e620ce29b8aac06366d08fb",
+        "dispatched_at": "2026-11-02T12:03:53Z"
+      },
+      "result": {
+        "agent_id": "/root/slide29",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\.codex\\generated_images\\01a19c1f-0205-7413-89a0-b2d411947d1c\\exec-c82f907d-0bab-4ad3-92e2-03ff952ce4da.png",
+        "selected_source_sha256": "eb8878aabf97f797d81d21a1665791b0307ec995128618cf15f204d89e135d80",
+        "final_image": "origin_image/slide_29.png",
+        "final_image_sha256": "eb8878aabf97f797d81d21a1665791b0307ec995128618cf15f204d89e135d80",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually checked exact data, rich original style, measured limitations and future work.",
+        "recorded_at": "2026-11-02T12:09:16Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_30",
+      "number": 30,
+      "title": "Quatre changements de session Colab",
+      "job": "prompts/slide_30.json",
+      "out": "origin_image/slide_30.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide30",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_30.json",
+        "prompt_sha256": "8b63c55bfcb944a7648bedae826e57749dd2006b3b960ba73e4b1eabbf2f93f5",
+        "dispatched_at": "2026-11-02T12:03:54Z"
+      },
+      "result": {
+        "agent_id": "/root/slide30",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\.codex\\generated_images\\01a19c1f-66c4-7801-9748-5488a5522175\\exec-8f308c8e-7140-4667-992b-59448548801e.png",
+        "selected_source_sha256": "b29970ed0d4f977756a6660d721feb015faf4bc2dac3a9c60988820ed3de242e",
+        "final_image": "origin_image/slide_30.png",
+        "final_image_sha256": "b29970ed0d4f977756a6660d721feb015faf4bc2dac3a9c60988820ed3de242e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually checked exact data, rich original style, measured limitations and future work.",
+        "recorded_at": "2026-11-02T12:09:17Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_31",
+      "number": 31,
+      "title": "Améliorations souhaitées",
+      "job": "prompts/slide_31.json",
+      "out": "origin_image/slide_31.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_07.png",
+          "role": "original style reference only"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide31",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_31.json",
+        "prompt_sha256": "246aa9e2c59cbdfe153f5d68619ce2ee9a1ae13026c3e13e7f72e402ccfb6da7",
+        "dispatched_at": "2026-11-02T12:03:55Z"
+      },
+      "result": {
+        "agent_id": "/root/slide31",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\omare\\.codex\\generated_images\\01a19c21-bad5-7e91-ba16-ba5889e3aadc\\exec-63ec1bbf-77b8-4b09-a2d9-d5d50dc9c22b.png",
+        "selected_source_sha256": "73246c23b60932d16b24ba65eda590acb3b7ac719721407fbb8b4fb7e1a40356",
+        "final_image": "origin_image/slide_31.png",
+        "final_image_sha256": "73246c23b60932d16b24ba65eda590acb3b7ac719721407fbb8b4fb7e1a40356",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually checked exact data, rich original style, measured limitations and future work.",
+        "recorded_at": "2026-11-02T12:09:18Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_32",
+      "number": 32,
+      "title": "Trente erreurs : comprendre avant de compter",
+      "job": "prompts/slide_32.json",
+      "out": "origin_image/slide_32.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_32.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_33",
+      "number": 33,
+      "title": "Du benchmark au laboratoire interactif",
+      "job": "prompts/slide_33.json",
+      "out": "origin_image/slide_33.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_33.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_34",
+      "number": 34,
+      "title": "Ce que nous retenons du projet",
+      "job": "prompts/slide_34.json",
+      "out": "origin_image/slide_34.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_34.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_35",
+      "number": 35,
+      "title": "Annexe — Lire les courbes de fine-tuning",
+      "job": "prompts/slide_35.json",
+      "out": "origin_image/slide_35.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        },
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\site\\dist\\figures\\curves_E.png",
+          "role": "strict input asset, figure de la campagne actuelle",
+          "fidelity": "Preserve actual data, axes, labels, traces, legend and values; embed unchanged, never synthesize a similar graph."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_35.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_36",
+      "number": 36,
+      "title": "Références et guide pour les questions",
+      "job": "prompts/slide_36.json",
+      "out": "origin_image/slide_36.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\omare\\OneDrive\\Desktop\\NLP_PROJECT_OMAR_ELKHALI\\DARIJA SENTIMENTS\\presentation\\Darija_Soutenance_Illustree_Comparee\\origin_image\\slide_23.png",
+          "role": "style only: approved comparison sample; do not copy layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_36.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-11-02T12:09:18Z"
+}
