@@ -1,0 +1,785 @@
+{
+  "deck_name": "Darija_Sentiment_Soutenance_Resultats",
+  "language": "French",
+  "goal": "Actualiser la soutenance originale avec les résultats complets et une explication visuelle fidèle.",
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 3,
+  "style": {
+    "name": "Éditorial classique ivoire et forêt",
+    "visual_direction": "French academic defense, warm classic editorial layout, one composition per slide, generous whitespace, coherent and varied evidence/architecture pages",
+    "color_palette": "ivory #F6F3EC, forest #173D36, sage #91A58C, muted terracotta #B66D60, fine warm-grey rules",
+    "typography": "large Georgia-like serif titles and clean Segoe-like humanist sans labels; French accents correct, Arabic right-to-left correctly shaped; body at least ~26px in a1920x1080 canvas",
+    "texture_and_finish": "flat refined paper, no gradients, no shadows, no fake UI panels",
+    "deck_consistency": "Match approved sample palette, typography mood, restraint and density. Vary composition by role. Do not copy sample chart into other slides."
+  },
+  "deck_context": {
+    "source_summary": "AfriSenti ary : train5583, validation494, test2961. Six familles A/B/C/D/E/P, 33 variantes, 71 évaluations finales. E1 exécuté ; E2 réduit λ0.1/0.3 exécuté. P DarijaBERT exclu du test.",
+    "core_claim": "E Arabizi est choisi sur validation (moyenne .811256) ; représentant42 test weightedF1 .608138, macro .600620. Étude exploratoire, test historiquement consulté. Le laboratoire possède cinq checkpoints, pas E.",
+    "canonical_terms": [
+      "ary : tâche principale",
+      "arq : auxiliaire E2 seulement",
+      "Weighted-F1 ≠ accuracy",
+      "IC conditionnel au checkpoint",
+      "Aucune exécution de notebook pour ce livrable"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Analyse de sentiment en darija marocaine",
+      "role": "cover",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Trois sentiments. Plusieurs écritures.",
+        "Six familles comparées sur AfriSenti ary",
+        "Groupe 12 · Master Big Data"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Grande couverture éditoriale : titre sérif à gauche ; à droite illustration à l’encre de fragments arabe/Arabizi qui se rejoignent, branche de sauge et mot مشاعر correctement composé. Aucun score sur la couverture.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Grande couverture éditoriale : titre sérif à gauche ; à droite illustration à l’encre de fragments arabe/Arabizi qui se rejoignent, branche de sauge et mot مشاعر correctement composé. Aucun score sur la couverture."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_01.png"
+    },
+    {
+      "number": 2,
+      "title": "Une langue, plusieurs graphies",
+      "role": "concept",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Arabe : هاد الخدمة زوينة بزاف",
+        "Arabizi : hadchi zwin bzaf",
+        "Mixte : هاد الفيلم زوين mais la fin ma3jbatnich",
+        "Exemples illustratifs, sans prédiction mesurée"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Trois lignes linguistiques très lisibles, annotations visuelles des chiffres Arabizi et de la négation. Illustration de flux de paroles. Les phrases sont distinctes : ne jamais les appeler traductions ni même contenu.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Trois lignes linguistiques très lisibles, annotations visuelles des chiffres Arabizi et de la négation. Illustration de flux de paroles. Les phrases sont distinctes : ne jamais les appeler traductions ni même contenu."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_02.png"
+    },
+    {
+      "number": 3,
+      "title": "Train apprend, validation choisit, test mesure",
+      "role": "process",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Train : 5 583 tweets",
+        "Validation : 494 tweets",
+        "Test : 2 961 tweets",
+        "Apprendre → choisir → verrouiller → mesurer"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Un grand processus horizontal avec trois étapes et un cadenas avant le test. Train : vocabulaire et poids. Validation : variante, époque, décalages. Test : représentant graine 42. Pied lisible : « Test déjà consulté historiquement : campagne exploratoire ». Aucune flèche du test vers le réglage.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Un grand processus horizontal avec trois étapes et un cadenas avant le test. Train : vocabulaire et poids. Validation : variante, époque, décalages. Test : représentant graine 42. Pied lisible : « Test déjà consulté historiquement : campagne exploratoire ». Aucune flèche du test vers le réglage."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_03.png"
+    },
+    {
+      "number": 4,
+      "title": "Lire les distributions avant les scores",
+      "role": "data evidence",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "9 038 tweets · trois classes",
+        "Neutre majoritaire sur train",
+        "Majorité seule : F1 test 0,160795",
+        "F1 pondéré ≠ accuracy"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Graphique de distributions fourni à gauche, grand et inchangé. À droite un encadré éditorial sans carte avec le score de la majorité, puis explication : F1 pondéré selon les effectifs, Macro-F1 donne le même poids aux classes. Mention « Distribution test : analyse descriptive après verrouillage ».",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Graphique de distributions fourni à gauche, grand et inchangé. À droite un encadré éditorial sans carte avec le score de la majorité, puis explication : F1 pondéré selon les effectifs, Macro-F1 donne le même poids aux classes. Mention « Distribution test : analyse descriptive après verrouillage »."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_04.png",
+      "required_images": [
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\site\\dist\\figures\\F1_distributions.png",
+          "role": "strict input asset, figure de la campagne actuelle",
+          "fidelity": "Preserve actual data, axes, labels, traces, legend and values; embed unchanged, never synthesize a similar graph."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "L’écriture peut devenir un raccourci",
+      "role": "comparison",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Part de neutres selon l’écriture",
+        "Arabe : train 29,2 % → test 36,1 %",
+        "Latin : train 52,3 % → test 29,9 %",
+        "Mixte : train 41,5 % → test 25,3 %"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Deux colonnes Train et Test reliées par des lignes, trois rangées arabe/latin/mixte avec leurs pourcentages exacts. Petit schéma « écriture ↔ sentiment » barré comme raccourci fragile. Lien descriptif, pas causal. Source : distributions conditionnelles enregistrées.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Deux colonnes Train et Test reliées par des lignes, trois rangées arabe/latin/mixte avec leurs pourcentages exacts. Petit schéma « écriture ↔ sentiment » barré comme raccourci fragile. Lien descriptif, pas causal. Source : distributions conditionnelles enregistrées."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_05.png"
+    },
+    {
+      "number": 6,
+      "title": "Nettoyer sans effacer les indices : expérience P",
+      "role": "process",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Référence : conserver négation, chiffres Arabizi et emojis",
+        "P : réapprendre sans emojis ni ponctuation",
+        "TF-IDF union : F1 test 0,539908",
+        "P union : F1 test 0,567396"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Moitié gauche : exemple illustratif « ma3jbnich 😒 !! » avant/après « ma3jbnich », étiqueté illustration. Moitié droite : deux barres horizontales sur axe 0 à 1 avec valeurs exactes A union et P union. En bas : « P DarijaBERT exclu du test ; scores validation conservés ». Distinguer réentraînement P de perturbation F4.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Moitié gauche : exemple illustratif « ma3jbnich 😒 !! » avant/après « ma3jbnich », étiqueté illustration. Moitié droite : deux barres horizontales sur axe 0 à 1 avec valeurs exactes A union et P union. En bas : « P DarijaBERT exclu du test ; scores validation conservés ». Distinguer réentraînement P de perturbation F4."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_06.png"
+    },
+    {
+      "number": 7,
+      "title": "A — Comprendre TF-IDF et les caractères",
+      "role": "architecture",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Mots et fragments de caractères → vecteur TF-IDF",
+        "Régression logistique → trois sentiments",
+        "Choix sur validation : caractères, F1 0,764076",
+        "F1 test du représentant : 0,553509"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Une phrase illustratrice devient une liste de fragments, puis une matrice de poids, puis trois sorties sans probabilités inventées. En dessous deux nombres validation/test clairement légendés. Petits détails : mots 1–2 ; caractères 2–5 ; C choisi sur validation.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Une phrase illustratrice devient une liste de fragments, puis une matrice de poids, puis trois sorties sans probabilités inventées. En dessous deux nombres validation/test clairement légendés. Petits détails : mots 1–2 ; caractères 2–5 ; C choisi sur validation."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_07.png"
+    },
+    {
+      "number": 8,
+      "title": "B1 — Reformuler le sentiment comme une hypothèse",
+      "role": "architecture",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Tweet = prémisse",
+        "Une hypothèse pour chaque sentiment",
+        "Trois formulations : arabe, français, anglais",
+        "F1 validation ajusté : 0,501026 · 0,497245 · 0,463444"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Schéma pédagogique à gauche : un tweet illustratif rejoint trois hypothèses puis un bloc NLI qui score l’implication. À droite tableau de trois lignes arabe/français/anglais avec les F1 validation exacts. En bas : « Langue et formulation varient ensemble ; leur effet n’est pas isolé ». Pas de probabilité inventée.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Schéma pédagogique à gauche : un tweet illustratif rejoint trois hypothèses puis un bloc NLI qui score l’implication. À droite tableau de trois lignes arabe/français/anglais avec les F1 validation exacts. En bas : « Langue et formulation varient ensemble ; leur effet n’est pas isolé ». Pas de probabilité inventée."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_08.png"
+    },
+    {
+      "number": 9,
+      "title": "B2 — Le transfert fixe dépend de l’écriture",
+      "role": "comparison",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "CAMeLBERT sans entraînement local sur ary",
+        "F1 test arabe : 0,558",
+        "F1 test latin : 0,144",
+        "Supervision externe : contamination non exclue"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Deux grandes barres arabe/latin, même axe F1 de 0 à 1 ; chiffres présentés arrondis à trois décimales. Effectifs : arabe 1 367 ; latin 1 519. Petit schéma modèle sentiment préentraîné → tweets marocains. Ne pas prétendre que le modèle n’a jamais été supervisé.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Deux grandes barres arabe/latin, même axe F1 de 0 à 1 ; chiffres présentés arrondis à trois décimales. Effectifs : arabe 1 367 ; latin 1 519. Petit schéma modèle sentiment préentraîné → tweets marocains. Ne pas prétendre que le modèle n’a jamais été supervisé."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_09.png"
+    },
+    {
+      "number": 10,
+      "title": "Déséquilibre : agir sur l’apprentissage et la décision",
+      "role": "concept",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Référence C : BiLSTM + AraVec",
+        "Validation : référence 0,753140",
+        "Pondération : 0,743939 · suréchantillonnage : 0,743941",
+        "Décision : argmax(log p + b)"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "À gauche deux interventions sur train : pondérer la perte et rééchantillonner, avec pictogrammes précis. À droite trois points ou petites barres validation sur même axe, valeurs six décimales. Bandeau final : « Les décalages b sont choisis sur validation, jamais sur test ». Comparaison sur trois graines.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "À gauche deux interventions sur train : pondérer la perte et rééchantillonner, avec pictogrammes précis. À droite trois points ou petites barres validation sur même axe, valeurs six décimales. Bandeau final : « Les décalages b sont choisis sur validation, jamais sur test ». Comparaison sur trois graines."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_10.png"
+    },
+    {
+      "number": 11,
+      "title": "C — Des embeddings à la décision",
+      "role": "architecture",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Hasard, AraVec ou fastText",
+        "BiLSTM : lecture dans les deux directions",
+        "Attention : pondérer les représentations",
+        "Choix C : BiLSTM + AraVec, sans attention"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Grande architecture illustrée : tokens → embeddings → deux chaînes LSTM en sens opposés → représentation → trois classes. Dessiner un embranchement en pointillés pour attention optionnelle. Ne pas inventer de poids d’attention ni réutiliser les anciens exemples numériques. Légende « Attention descriptive ≠ preuve causale ». Diagramme clair, très pédagogique.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Grande architecture illustrée : tokens → embeddings → deux chaînes LSTM en sens opposés → représentation → trois classes. Dessiner un embranchement en pointillés pour attention optionnelle. Ne pas inventer de poids d’attention ni réutiliser les anciens exemples numériques. Légende « Attention descriptive ≠ preuve causale ». Diagramme clair, très pédagogique."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_11.png"
+    },
+    {
+      "number": 12,
+      "title": "C — Les courbes complètent le tableau des scores",
+      "role": "data evidence",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "BiLSTM + AraVec retenu sur validation",
+        "Validation moyenne : 0,753140",
+        "F1 test, graine 42 : 0,493340",
+        "Les courbes décrivent les époques observées"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Courbes originales fournies très grandes au centre, occupent 70 % de la page ; conserver axes, traces et légende. À droite ou en bas une courte colonne des deux scores et « Époque retenue sur validation ». Pas de tendance causale affirmée à partir des courbes.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Courbes originales fournies très grandes au centre, occupent 70 % de la page ; conserver axes, traces et légende. À droite ou en bas une courte colonne des deux scores et « Époque retenue sur validation ». Pas de tendance causale affirmée à partir des courbes."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_12.png",
+      "required_images": [
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\site\\dist\\figures\\curves_C.png",
+          "role": "strict input asset, figure de la campagne actuelle",
+          "fidelity": "Preserve actual data, axes, labels, traces, legend and values; embed unchanged, never synthesize a similar graph."
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "D et E — Geler ou ajuster l’encodeur",
+      "role": "architecture",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "D : DarijaBERT gelé, seule la tête apprend",
+        "E : les poids de l’encodeur sont aussi ajustés",
+        "D states : F1 test 0,571593",
+        "E Arabizi : F1 test 0,608138"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Deux architectures miroirs : D encodeur avec cadenas, tête apprenable ; E encodeur et tête apprenables. Flèches de gradients en terre cuite seulement sur les parties apprenables. Une comparaison complémentaire en bas : E DarijaBERT standard 0,579512 ; E Arabizi 0,608138, représentants graine 42. Aucune causalité isolée entre taille/coût et qualité.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Deux architectures miroirs : D encodeur avec cadenas, tête apprenable ; E encodeur et tête apprenables. Flèches de gradients en terre cuite seulement sur les parties apprenables. Une comparaison complémentaire en bas : E DarijaBERT standard 0,579512 ; E Arabizi 0,608138, représentants graine 42. Aucune causalité isolée entre taille/coût et qualité."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_13.png"
+    },
+    {
+      "number": 14,
+      "title": "E2 — Une tâche auxiliaire ne garantit pas un gain",
+      "role": "architecture",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Perte : L_ary + λ L_arq",
+        "λ = 0 : F1 test 0,608138",
+        "λ = 0,1 : 0,605137 · λ = 0,3 : 0,604073",
+        "Plan réduit : une graine, trois époques maximum"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Illustration d’un encodeur partagé à deux têtes ary/arq ; tableau trois lignes des valeurs exactes à droite. En bas : « λ = 0,7 non évalué. Budgets et nombres de graines différents : comparaison exploratoire ». Le corpus principal reste ary ; arq intervient seulement en auxiliaire E2.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Illustration d’un encodeur partagé à deux têtes ary/arq ; tableau trois lignes des valeurs exactes à droite. En bas : « λ = 0,7 non évalué. Budgets et nombres de graines différents : comparaison exploratoire ». Le corpus principal reste ary ; arq intervient seulement en auxiliaire E2."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_14.png"
+    },
+    {
+      "number": 15,
+      "title": "La sélection se fait avant la comparaison finale",
+      "role": "data evidence",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Critère : F1 validation de chaque variante",
+        "E Arabizi : moyenne 0,811256",
+        "Représentant de chaque famille : graine 42",
+        "33 variantes · 71 évaluations finales"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Classement validation des six familles : E 0,811256 ; A 0,764076 ; C 0,753140 ; D 0,746022 ; P 0,735605 ; B 0,602343. Axe commun 0 à 1. Grand cadenas et texte « Candidat fixé : E Arabizi ». Préciser « Moyenne des graines disponibles ; toutes les familles n’ont pas trois graines ». Ne pas choisir après lecture du test.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Classement validation des six familles : E 0,811256 ; A 0,764076 ; C 0,753140 ; D 0,746022 ; P 0,735605 ; B 0,602343. Axe commun 0 à 1. Grand cadenas et texte « Candidat fixé : E Arabizi ». Préciser « Moyenne des graines disponibles ; toutes les familles n’ont pas trois graines ». Ne pas choisir après lecture du test."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_15.png"
+    },
+    {
+      "number": 16,
+      "title": "Résultats sur le test officiel",
+      "role": "data evidence",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Weighted-F1 · représentants graine 42",
+        "E Arabizi : 0,608138",
+        "Macro-F1 de E : 0,600620",
+        "Choix fixé sur validation"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Reprendre très fidèlement la mise en page de la diapositive 16 de la soutenance d’origine : graphique à barres horizontales à gauche, grand résultat typographique à droite et filets fins. SIX barres A TF-IDF caractères 0,553509 ; B CAMeLBERT 0,420555 ; C BiLSTM + AraVec 0,493340 ; D DarijaBERT gelé 0,571593 ; E DarijaBERT-Arabizi 0,608138 ; P TF-IDF sans signes 0,567396. Axe 0 à 1, longueurs proportionnelles. E vert forêt ; autres sauge. À droite grand « 0,608138 », « Candidat choisi sur validation », « Macro-F1 : 0,600620 ». Bas : « AfriSenti ary · n = 2 961 · campagne exploratoire ». SUPPRIMER toute ancienne mention E non exécuté ou A candidat.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Reprendre très fidèlement la mise en page de la diapositive 16 de la soutenance d’origine : graphique à barres horizontales à gauche, grand résultat typographique à droite et filets fins. SIX barres A TF-IDF caractères 0,553509 ; B CAMeLBERT 0,420555 ; C BiLSTM + AraVec 0,493340 ; D DarijaBERT gelé 0,571593 ; E DarijaBERT-Arabizi 0,608138 ; P TF-IDF sans signes 0,567396. Axe 0 à 1, longueurs proportionnelles. E vert forêt ; autres sauge. À droite grand « 0,608138 », « Candidat choisi sur validation », « Macro-F1 : 0,600620 ». Bas : « AfriSenti ary · n = 2 961 · campagne exploratoire ». SUPPRIMER toute ancienne mention E non exécuté ou A candidat."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_16.png",
+      "sample_approved": true
+    },
+    {
+      "number": 17,
+      "title": "Lire les erreurs du candidat, classe par classe",
+      "role": "data evidence",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Candidat : E DarijaBERT-Arabizi",
+        "La diagonale indique les prédictions correctes",
+        "Les cases hors diagonale montrent les confusions",
+        "Un score global ne suffit pas"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Matrice originale du nouveau candidat très grande, totalement inchangée. À droite trois annotations génériques expliquant lignes, colonnes et diagonale sans inventer de nombre de cellules. Ne pas réutiliser la matrice de l’ancienne campagne A.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Matrice originale du nouveau candidat très grande, totalement inchangée. À droite trois annotations génériques expliquant lignes, colonnes et diagonale sans inventer de nombre de cellules. Ne pas réutiliser la matrice de l’ancienne campagne A."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_17.png",
+      "required_images": [
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\site\\dist\\figures\\modele_final.png",
+          "role": "strict input asset, figure de la campagne actuelle",
+          "fidelity": "Preserve actual data, axes, labels, traces, legend and values; embed unchanged, never synthesize a similar graph."
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Validation → test : une baisse à expliquer",
+      "role": "comparison",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "E Arabizi : 0,811256 → 0,608138",
+        "Les six familles perdent en généralisation",
+        "Le maximum d’une grille test reste un oracle",
+        "Aucun réglage test ne remplace le verrou"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Grand graphique dumbbell de six lignes : validation vers test. E 0,811256→0,608138 ; A 0,764076→0,553509 ; C 0,753140→0,493340 ; D 0,746022→0,571593 ; P 0,735605→0,567396 ; B 0,602343→0,420555. Cercles ouverts validation, pleins test, légende exacte, axe0à1. Note « Validation : moyenne disponible ; test : représentant 42 ». À droite petit schéma d’oracle barré, jamais de score optimisé inventé.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Grand graphique dumbbell de six lignes : validation vers test. E 0,811256→0,608138 ; A 0,764076→0,553509 ; C 0,753140→0,493340 ; D 0,746022→0,571593 ; P 0,735605→0,567396 ; B 0,602343→0,420555. Cercles ouverts validation, pleins test, légende exacte, axe0à1. Note « Validation : moyenne disponible ; test : représentant 42 ». À droite petit schéma d’oracle barré, jamais de score optimisé inventé."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_18.png"
+    },
+    {
+      "number": 19,
+      "title": "Écriture non vue : le transfert reste difficile",
+      "role": "comparison",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "TF-IDF union, même architecture",
+        "Train arabe → test latin : F1 0,2254",
+        "Train latin → test arabe : F1 0,2110",
+        "Taille et couverture du train changent ensemble"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Deux rangées horizontales séparées, SANS croisement. Rangée haute verte : « Train arabe » à gauche → flèche portant « F1 test : 0,2254 » → « Test latin · n = 1 519 » à droite. Rangée basse terre cuite : « Train latin » à gauche → flèche portant « F1 test : 0,2110 » → « Test arabe · n = 1 367 » à droite. Les labels doivent être placés directement sur leur propre flèche et non sur l’autre rangée. En bas : « Ce diagnostic ne mesure pas un effet causal pur de l’alphabet ». Interdire les anciennes valeurs 0,2098/0,1932.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Deux rangées horizontales séparées, SANS croisement. Rangée haute verte : « Train arabe » à gauche → flèche portant « F1 test : 0,2254 » → « Test latin · n = 1 519 » à droite. Rangée basse terre cuite : « Train latin » à gauche → flèche portant « F1 test : 0,2110 » → « Test arabe · n = 1 367 » à droite. Les labels doivent être placés directement sur leur propre flèche et non sur l’autre rangée. En bas : « Ce diagnostic ne mesure pas un effet causal pur de l’alphabet ». Interdire les anciennes valeurs 0,2098/0,1932."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_19.png"
+    },
+    {
+      "number": 20,
+      "title": "Incertitude : situer le score, pas seulement le classer",
+      "role": "data evidence",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "E : IC bootstrap 95 % [0,590655 ; 0,624099]",
+        "1 000 rééchantillonnages conditionnels au checkpoint",
+        "Graines et bootstrap : deux variabilités distinctes",
+        "McNemar E / E2 λ=0,3 : p = 1,0"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Un tableau numérique exact remplace le forest plot pour éviter toute approximation géométrique : colonnes Méthode / F1 test / IC95%. Six lignes : A0,553509 [0,535264 ;0,571928] ; B0,420555 [0,401828 ;0,439308] ; C0,493340 [0,475292 ;0,511506] ; D0,571593 [0,552955 ;0,589547] ; E0,608138 [0,590655 ;0,624099] ; P0,567396 [0,548377 ;0,585336]. À droite grand IC de E et McNemar p=1,0. Le test compare les erreurs appariées, pas directement le F1. Pas de graphique ni figure source sur cette page. Style de tableau éditorial de la soutenance originale.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Un tableau numérique exact remplace le forest plot pour éviter toute approximation géométrique : colonnes Méthode / F1 test / IC95%. Six lignes : A0,553509 [0,535264 ;0,571928] ; B0,420555 [0,401828 ;0,439308] ; C0,493340 [0,475292 ;0,511506] ; D0,571593 [0,552955 ;0,589547] ; E0,608138 [0,590655 ;0,624099] ; P0,567396 [0,548377 ;0,585336]. À droite grand IC de E et McNemar p=1,0. Le test compare les erreurs appariées, pas directement le F1. Pas de graphique ni figure source sur cette page. Style de tableau éditorial de la soutenance originale."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_20.png"
+    },
+    {
+      "number": 21,
+      "title": "G — Qualité, latence CPU et taille des poids",
+      "role": "data evidence",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Mettre la qualité en regard du coût",
+        "Latence : inférence CPU unitaire, pas débit GPU",
+        "Poids sur disque ≠ mémoire vive",
+        "Temps cumulés : sans doubler raw/tuned ou reprises"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Insérer le graphique G original comme preuve centrale très grande et inchangée. Autour seulement trois annotations courtes pour interpréter les axes et le coût. Ne jamais recopier les anciens coûts ni inventer les colonnes masquées dans l’affichage. Aucun nouveau chiffre de coût.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Insérer le graphique G original comme preuve centrale très grande et inchangée. Autour seulement trois annotations courtes pour interpréter les axes et le coût. Ne jamais recopier les anciens coûts ni inventer les colonnes masquées dans l’affichage. Aucun nouveau chiffre de coût."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_20.png",
+      "required_images": [
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\site\\dist\\figures\\G_quality_cost.png",
+          "role": "strict input asset, figure de la campagne actuelle",
+          "fidelity": "Preserve actual data, axes, labels, traces, legend and values; embed unchanged, never synthesize a similar graph."
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Trente erreurs : comprendre avant de compter",
+      "role": "concept",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "30 exemples à relire",
+        "0 / 30 validations humaines enregistrées",
+        "Ironie, graphie, ambiguïté : hypothèses provisoires",
+        "Un désaccord ne prouve pas une erreur de label"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Illustration éditoriale de loupe et annotations sur trois fragments schématiques sans faux tweets réels. À droite processus « erreur observée → hypothèse → revue humaine → conclusion ». Ne pas reprendre les anciens comptes 8/8/7/7 comme résultats validés. Pas de taux de bruit inventé.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Illustration éditoriale de loupe et annotations sur trois fragments schématiques sans faux tweets réels. À droite processus « erreur observée → hypothèse → revue humaine → conclusion ». Ne pas reprendre les anciens comptes 8/8/7/7 comme résultats validés. Pas de taux de bruit inventé."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_21.png"
+    },
+    {
+      "number": 23,
+      "title": "Du benchmark au laboratoire interactif",
+      "role": "process",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Site HTML · CSS · JavaScript",
+        "Une phrase → six familles affichées",
+        "Cinq modèles testés réellement via le moteur local",
+        "E : checkpoint absent localement, aucune simulation"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Schéma fonctionnel élégant : zone de phrase illustrative → serveur local Python → six branches A/B/C/D/E/P. Cinq branches actives, E en contour pointillé avec étiquette « poids à restaurer ». Pas de capture fabriquée présentée comme réelle, pas de prédictions chiffrées inventées. URL lisible « omarelkhali.github.io/DARIJA-MACHA3IR ». Le site statique a besoin du moteur local pour prédire.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Schéma fonctionnel élégant : zone de phrase illustrative → serveur local Python → six branches A/B/C/D/E/P. Cinq branches actives, E en contour pointillé avec étiquette « poids à restaurer ». Pas de capture fabriquée présentée comme réelle, pas de prédictions chiffrées inventées. URL lisible « omarelkhali.github.io/DARIJA-MACHA3IR ». Le site statique a besoin du moteur local pour prédire."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_22.png"
+    },
+    {
+      "number": 24,
+      "title": "Ce que nous retenons du projet",
+      "role": "summary",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "Candidat mesuré : DarijaBERT-Arabizi",
+        "F1 test : 0,608138 · Macro-F1 : 0,600620",
+        "Les écarts par écriture restent décisifs",
+        "Prochaine étape : de nouvelles annotations indépendantes"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Composition finale très forte : un grand chiffre 0,608138 à gauche, puis trois enseignements visuels à droite : protocole, généralisation, coût. Bas : « Test historique déjà consulté · revue humaine inachevée · checkpoint E à restaurer ». Conclusion conditionnelle, aucune promesse de fiabilité universelle.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Composition finale très forte : un grand chiffre 0,608138 à gauche, puis trois enseignements visuels à droite : protocole, généralisation, coût. Bas : « Test historique déjà consulté · revue humaine inachevée · checkpoint E à restaurer ». Conclusion conditionnelle, aucune promesse de fiabilité universelle."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_23.png"
+    },
+    {
+      "number": 25,
+      "title": "Annexe — Lire les courbes de fine-tuning",
+      "role": "data evidence",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "E : apprentissage et validation par époque",
+        "Sélection de l’époque sur validation",
+        "Les courbes ne prouvent pas une explication causale",
+        "Aucune nouvelle exécution pour cette présentation"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Courbes E fournies très grandes et conservées sans modification. Deux petites annotations hors figure : apprentissage / validation. Conserver les courbes de tous les runs présents, ne pas fabriquer de valeurs ou lisser les traces.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Courbes E fournies très grandes et conservées sans modification. Deux petites annotations hors figure : apprentissage / validation. Conserver les courbes de tous les runs présents, ne pas fabriquer de valeurs ou lisser les traces."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_13.png",
+      "required_images": [
+        {
+          "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\site\\dist\\figures\\curves_E.png",
+          "role": "strict input asset, figure de la campagne actuelle",
+          "fidelity": "Preserve actual data, axes, labels, traces, legend and values; embed unchanged, never synthesize a similar graph."
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "title": "Références et guide pour les questions",
+      "role": "reference",
+      "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+      "key_points": [
+        "AfriSenti · Muhammad et al., 2023",
+        "DarijaBERT · Gaanoun et al.",
+        "fastText · Bojanowski et al., 2017",
+        "Code, notebooks et résultats : DARIJA-MACHA3IR"
+      ],
+      "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+      "layout": {
+        "composition": "Bibliographie courte à gauche, index thématique Q1–Q12 à droite : Q1/Q2 données et protocole ; Q3 nettoyage/P ; Q4/Q5 NLI/transfert ; Q6 déséquilibre ; Q7 réseaux ; Q8 D/E ; Q9 multi-tâche ; Q10 diagnostics test ; Q11 écritures ; Q12 erreurs/coûts. Petit mot arabe مشاعر et branche de sauge de la référence. Les références ne sont pas les mesures de notre campagne.",
+        "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+      },
+      "visual_elements": {
+        "main_visual": "Bibliographie courte à gauche, index thématique Q1–Q12 à droite : Q1/Q2 données et protocole ; Q3 nettoyage/P ; Q4/Q5 NLI/transfert ; Q6 déséquilibre ; Q7 réseaux ; Q8 D/E ; Q9 multi-tâche ; Q10 diagnostics test ; Q11 écritures ; Q12 erreurs/coûts. Petit mot arabe مشاعر et branche de sauge de la référence. Les références ne sont pas les mesures de notre campagne."
+      },
+      "constraints": [
+        "Texte français exact, accents et arabe correctement formé.",
+        "Aucun numéro de page, filigrane ou logo extérieur.",
+        "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+        "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+      ],
+      "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_24.png"
+    }
+  ],
+  "authorization": {
+    "source": "Instructions utilisateur persistantes et approvals.json de la soutenance originale",
+    "instruction": "Sans me questionner sur rien ; même manière que Darija_Sentiment_Soutenance en changeant les résultats",
+    "intermediate_confirmations_waived": true
+  },
+  "approved_style_reference": {
+    "path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_16.png",
+    "role": "approved current sample, style only",
+    "fidelity": "palette, typography, illustration language; vary layout"
+  },
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen__imagegen",
+    "mode": "generate",
+    "model_config": "built-in defaults; exact model and size not exposed",
+    "prompt_source": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance_Resultats\\sample_prompt.txt",
+    "approved_sample_path": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance_Resultats\\origin_image\\slide_16.png",
+    "input_context_preparation": "view_image then referenced_image_paths; reference is style/layout only",
+    "handoff_rule": "Same built-in tool, generate a new full slide using style-only references; no local rendering or overlays."
+  }
+}

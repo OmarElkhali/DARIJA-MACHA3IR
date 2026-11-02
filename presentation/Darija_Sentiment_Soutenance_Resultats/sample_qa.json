@@ -1,0 +1,14 @@
+{
+  "slide": 16,
+  "accepted": true,
+  "intermediate_confirmation_waived": true,
+  "source": "Same style as original soutenance explicitly requested; persistent no-question authorization",
+  "checks": [
+    "six current family labels and F1 values correct",
+    "E selected on validation, not A",
+    "Macro-F1 current",
+    "bar lengths proportional on0to1axis",
+    "French readable and no clipping",
+    "same ivory forest sage style"
+  ]
+}

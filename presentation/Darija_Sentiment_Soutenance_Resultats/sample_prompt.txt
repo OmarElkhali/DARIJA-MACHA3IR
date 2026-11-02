@@ -1,0 +1,28 @@
+Generate a NEW complete 16:9 French presentation slide. Image 1 is ONLY the style/layout reference from the earlier soutenance. Keep its exquisite ivory/forest/sage editorial system, huge elegant serif title and warm paper, fine rules, مشاعر branch motif. Replace ALL its content using this CURRENT slide brief. No overlays, output the finished slide image itself.
+{
+  "number": 16,
+  "title": "Résultats sur le test officiel",
+  "role": "data evidence",
+  "intent": "Une idée expliquée visuellement, une preuve mesurée et sa limite.",
+  "key_points": [
+    "Weighted-F1 · représentants graine 42",
+    "E Arabizi : 0,608138",
+    "Macro-F1 de E : 0,600620",
+    "Choix fixé sur validation"
+  ],
+  "local_context": "Les seuls faits à afficher sont dans ce job. Les anciens textes et scores de la référence ne sont pas des données actuelles.",
+  "layout": {
+    "composition": "Reprendre très fidèlement la mise en page de la diapositive 16 de la soutenance d’origine : graphique à barres horizontales à gauche, grand résultat typographique à droite et filets fins. SIX barres A TF-IDF caractères 0,553509 ; B CAMeLBERT 0,420555 ; C BiLSTM + AraVec 0,493340 ; D DarijaBERT gelé 0,571593 ; E DarijaBERT-Arabizi 0,608138 ; P TF-IDF sans signes 0,567396. Axe 0 à 1, longueurs proportionnelles. E vert forêt ; autres sauge. À droite grand « 0,608138 », « Candidat choisi sur validation », « Macro-F1 : 0,600620 ». Bas : « AfriSenti ary · n = 2 961 · campagne exploratoire ». SUPPRIMER toute ancienne mention E non exécuté ou A candidat.",
+    "spacing": "Grandes marges, texte lisible en projection, varier les compositions comme la soutenance de référence."
+  },
+  "visual_elements": {
+    "main_visual": "Reprendre très fidèlement la mise en page de la diapositive 16 de la soutenance d’origine : graphique à barres horizontales à gauche, grand résultat typographique à droite et filets fins. SIX barres A TF-IDF caractères 0,553509 ; B CAMeLBERT 0,420555 ; C BiLSTM + AraVec 0,493340 ; D DarijaBERT gelé 0,571593 ; E DarijaBERT-Arabizi 0,608138 ; P TF-IDF sans signes 0,567396. Axe 0 à 1, longueurs proportionnelles. E vert forêt ; autres sauge. À droite grand « 0,608138 », « Candidat choisi sur validation », « Macro-F1 : 0,600620 ». Bas : « AfriSenti ary · n = 2 961 · campagne exploratoire ». SUPPRIMER toute ancienne mention E non exécuté ou A candidat."
+  },
+  "constraints": [
+    "Texte français exact, accents et arabe correctement formé.",
+    "Aucun numéro de page, filigrane ou logo extérieur.",
+    "Aucun résultat inventé. Conserver exactement les données des sources strictes.",
+    "La référence ancienne sert uniquement au style et à la mise en page ; ne pas reprendre ses anciens résultats."
+  ],
+  "legacy_style_slide": "D:\\SetupGame\\Desktop\\TP LLM\\DARIJA SENTIEMENTS\\Darija-Sentiment\\presentation\\Darija_Sentiment_Soutenance\\origin_image\\slide_16.png"
+}
